@@ -1,0 +1,151 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+:root {
+  --white: #ffffff;
+  --gray: #edf2f5;
+  --black: #232427;
+  --orange: #f4662a;
+  --hover-orange: #ed6429;
+  --px32: 32px;
+}
+
+a {
+  color: inherit;
+  outline-offset: 0;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.button {
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--orange);
+  border-radius: 6px;
+  padding: 12px 26px;
+  width: fit-content;
+  transition: background-color 0.4s ease;
+}
+
+.button:hover {
+  background-color: var(--hover-orange);
+}
+
+section {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@font-face {
+  font-family: "Core Sans N 45 Light";
+  src: local("Core Sans N 45 Light"), local("Core Sans N 45-Light"),
+    url("../fonts/core_sans_n_35_light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Core Sans N 65 Bold";
+  src: local("Core Sans N45 Bold"), local("Core Sans N 65-Bold"),
+    url("../fonts/core_sans_n_65_bold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Core Sans N 45 Light", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.title {
+  font-family: "Core Sans N 65 Bold", sans-serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+}
+
+.item__title {
+  font-family: "Core Sans N 65 Bold", sans-serif;
+  font-size: 24px;
+  margin-bottom: 24px;
+  min-height: 64px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  max-width: 1352px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+.main {
+ position: relative;
+ top: -90px;
+}
+
+.responsive-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #707c8f;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s
+}
+
+.stop-scroll .responsive-overlay {
+  visibility: visible;
+  opacity: .8;
+  z-index: 5
+}
+

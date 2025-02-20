@@ -1,0 +1,126 @@
+.events {
+  background-color: var(--gray);
+  padding-top: 100px;
+  padding-bottom: 120px;
+  margin-top: 120px;
+}
+
+.events__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--px32);
+}
+
+.events__block {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--px32);
+}
+
+.events__block:not(:nth-last-of-type(1)) {
+    border-bottom: 1px solid #E2E9ED;
+    padding-bottom: var(--px32);
+}
+
+.events__date {
+  display: flex;
+  gap: 8px;
+  width: 20%;
+}
+
+.events__content {
+  width: 50%;
+}
+.events__info {
+  width: 26%;
+}
+
+.events__number {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.events__day {
+  font-size: 14px;
+  line-height: 20px;
+  color: #7c90a0;
+}
+
+.events__address {
+    color: #7c90a0;
+}
+
+.events__name {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.events__list {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.mb {
+  margin-bottom: 24px;
+}
+.events__start,
+.events__place {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.events__place {
+    flex-direction: column;
+    align-items: start;
+}
+
+.events__btn {
+    padding: 12px 20px;
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.events__btn::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: var(--hover-orange);
+    transition: width .4s
+}
+
+.events__btn:hover::after {
+    width: 100%
+}
+
+.events__start::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../icon/time.svg);
+  background-position: left center;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+}
+
+.events__place::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    display: block;
+    width: 10px;
+    height: 15px;
+    background-image: url(../icon/place.svg);
+    background-position: left center;
+    background-size: 10px 12px;
+    background-repeat: no-repeat;
+  }

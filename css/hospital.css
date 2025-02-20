@@ -1,0 +1,126 @@
+.hospital {
+  position: relative;
+  padding-top: 160px;
+}
+
+.parent {
+  position: relative;
+}
+
+.hospital__text {
+  width: 68%;
+  margin-bottom: var(--px32);
+}
+
+.hospital__content {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--px32);
+}
+
+.hospital__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 15px;
+}
+
+.hospital__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  width: 34%;
+  margin-bottom: 24px;
+}
+
+.hospital-swiper-2 {
+  height: 656px;
+  border-radius: 20px;
+  background-color: #edf2f5;
+}
+
+.hospital__bg {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--px32);
+}
+
+.hospital .swiper-next-hospital-2,
+.hospital .swiper-prev-hospital-2 {
+  top: auto;
+  bottom: 32px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e2e9ed;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.hospital .swiper-prev-hospital-2,
+.hospital .swiper-rtl .swiper-next-hospital-2 {
+  left: 4%;
+  right: auto;
+}
+
+.hospital .swiper-next-hospital-2,
+.hospital .swiper-rtl .swiper-prev-hospital-2 {
+  left: 7.4%;
+  right: auto;
+}
+
+.hospital .swiper-next-hospital-2:after,
+.hospital .swiper-rtl .swiper-prev-hospital-2:after,
+.hospital .swiper-prev-hospital-2:after,
+.hospital .swiper-rtl .swiper-next-hospital-2:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 10px;
+  background-image: url(../icon/black-shevron.svg);
+  background-size: 6px 10px;
+  background-position: center;
+}
+
+.hospital .swiper-prev-hospital-2:after,
+.hospital .swiper-rtl .swiper-next-hospital-2:after {
+  transform: rotate(180deg);
+}
+
+.hospital__block {
+  width: 25%;
+  padding: var(--px32);
+}
+
+.hospital-swiper-2 .hospital__title {
+  width: 100%;
+}
+
+.hospital__img {
+  border-radius: 20px;
+  width: 65%;
+  height: 656px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.hospital-1 {
+  background-image: url(../img/hospital-img-1.webp);
+}
+
+.hospital-2 {
+  background-image: url(../img/hospital-img-3.webp);
+}
+
+.hospital-3 {
+  background-image: url(../img/hospital-img-2.webp);
+}
+
+.hospital-4 {
+  background-image: url(../img/hospital-img-4.webp);
+}
+
+.hospital-swiper-2 .hospital__text {
+  width: 100%;
+}

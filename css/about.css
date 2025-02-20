@@ -1,0 +1,158 @@
+.about {
+  position: relative;
+  overflow: hidden;
+}
+
+.about__flex {
+  display: flex;
+  gap: 10px;
+}
+
+.about__container {
+  display: flex;
+}
+
+.about__title {
+  width: 30%;
+  padding-top: 120px;
+}
+
+.about__wrapper {
+  position: relative;
+  width: 69%;
+}
+
+.about__text {
+  margin-bottom: var(--px32);
+}
+
+.about .about-swiper {
+  height: 810px;
+  padding: 120px 0 40px 32px;
+}
+
+
+.about .about-swiper .swiper-slide {
+  overflow: visible;
+}
+
+.about__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 560px;
+  padding: var(--px32);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform .4s ease;
+}
+
+.about__swiper-title {
+  font-size: 24px;
+  line-height: 32px;
+  min-height: 64px;
+  margin-bottom: 24px;
+}
+
+.about-slide-1 {
+  background-color: #f2f3f5;
+  background-image: url(../img/about-img-1.svg);
+}
+
+.about-slide-2 {
+  background-color: #ecf9ff;
+  background-image: url(../img/about-img-2.svg);
+}
+
+.about-slide-3 {
+  background-color: #ebffed;
+  background-image: url(../img/about-img-3.svg);
+}
+
+.about-slide-4 {
+  background-color: #f5f1ff;
+  background-image: url(../img/about-img-4.svg);
+}
+
+.about-slide-5 {
+  background-color: #ffefef;
+  background-image: url(../img/about-img-5.svg);
+}
+
+.about-slide-6 {
+  background-color: #f8faff;
+  background-image: url(../img/about-img-6.svg);
+}
+
+.about-slide-7 {
+  background-color: #fff7da;
+  background-image: url(../img/about-img-7.svg);
+}
+
+.about .swiper-button-next,
+.about .swiper-button-prev {
+  top: 98%;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e2e9ed;
+  border-radius: 50%;
+}
+
+.about .swiper-button-prev,
+.about .swiper-rtl .swiper-button-next {
+  left: 45.5%;
+}
+
+.about .swiper-button-next,
+.about .swiper-rtl .swiper-button-prev {
+  left: 49.1%;
+}
+
+.about__overflow {
+  gap: var(--px32);
+  width: 1312px;
+  height: 624px;
+  overflow: hidden;
+}
+
+.about .swiper-free-mode > .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.about .swiper-button-next:after,
+.about .swiper-rtl .swiper-button-prev:after,
+.about .swiper-button-prev:after,
+.about .swiper-rtl .swiper-button-next:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 10px;
+  background-image: url(../icon/black-shevron.svg);
+  background-size: 6px 10px;
+  background-position: center;
+}
+
+.about .swiper-button-prev:after,
+.about .swiper-rtl .swiper-button-next:after {
+  transform: rotate(180deg);
+}
+
+.about__btn {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.about__slide:hover .about__btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.about__slide:hover {
+  transform: scale(1.05);
+}
+

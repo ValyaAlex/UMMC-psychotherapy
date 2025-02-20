@@ -1,0 +1,104 @@
+.questions {
+  display: none;
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.questions__list .ac {
+  margin-top: 0;
+  border: none;
+  border: 1px solid #E2E9ED;
+  border-radius: 20px;
+  background-color: var(--white);
+  margin-bottom: 16px;
+}
+
+.questions .ac .ac-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: inherit;
+  padding: var(--px32);
+}
+
+.questions .ac .ac-trigger::after {
+  display: none;
+}
+
+.plus-minus-toggle {
+  position: relative;
+  height: 0px;
+  width: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.plus-minus-toggle::before {
+  transform: rotate(90deg);
+}
+
+.plus-minus-toggle::after {
+  transform: rotate(180deg);
+}
+
+.plus-minus-toggle::before,
+.plus-minus-toggle::after {
+  background: var(--black);
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 14px;
+  transition: transform .4s ease, background-color .4s ease;
+}
+
+.accordion .is-active > .ac-trigger .plus-minus-toggle::before {
+  transform:  rotate(45deg);
+  background-color: var(--orange);
+}
+
+.accordion .is-active > .ac-trigger .plus-minus-toggle::after {
+  transform:  rotate(135deg);
+  background-color: var(--orange);
+}
+
+.questions__item-title {
+  color: var(--black);
+  transition: color .4s ease;
+  font-weight: 600;
+}
+
+.questions__item:hover .questions__item-title {
+  color: var(--orange);
+}
+
+.questions__item:hover .plus-minus-toggle::before,
+.questions__item:hover .plus-minus-toggle::after {
+  background-color: var(--orange);
+}
+
+
+.questions .ac .ac-panel .ac-text {
+  font-family: 'Core Sans N 45 Light', sans-serif;
+  color: var(--black);
+  padding: 20px 40px;
+}
+
+.questions .ac .ac-header {
+  font-size: 24px;
+}
+
+.questions__arrow-svg {
+  stroke: var(--black);
+  transition: transform .4s ease ease-in-out, stroke .4s ease ease-in-out;
+}
+
+.questions__text .text-decoration {
+  display: inline;
+}
+
+.questions__text {
+  max-width: 50%;
+  margin-bottom: var(--px32);
+}

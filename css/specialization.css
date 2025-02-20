@@ -1,0 +1,161 @@
+.specialization {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  padding-top: 160px;
+}
+
+.specialization .title {
+  padding-left: 50px;
+}
+
+.specialization__wrapper {
+  position: relative;
+  width: 100vw;
+}
+
+.specialization__cards {
+  height: 624px;
+}
+
+.specialization__card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 416px 416px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.specialization__overflow {
+  position: absolute;
+  bottom: 5px;
+  left: 4px;
+  right: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: overflow 0.4s ease;
+}
+
+.specialization__info {
+  border-radius: 12px;
+  padding: var(--px32);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.0576) 0%,
+    rgba(255, 255, 255, 0.48) 100%
+  );
+  backdrop-filter: blur(4px);
+  transform: translateY(85px);
+  transition: transform 0.4s ease;
+}
+
+.specialization__title {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+}
+
+.specialization-1 {
+  background-color: #fff5f5;
+  background-image: url(../img/specialization-img-1.webp);
+}
+
+.specialization-2 {
+  background-color: rgba(101, 184, 239, 0.1);
+  background-image: url(../img/specialization-img-2.webp);
+}
+
+.specialization-3 {
+  background-color: rgba(252, 88, 28, 0.24);
+  background-image: url(../img/specialization-img-3.webp);
+}
+
+.specialization-4 {
+  background-color: rgba(5, 176, 221, 0.24);
+  background-image: url(../img/specialization-img-4.webp);
+}
+
+.specialization-5 {
+  background-color: rgba(0, 136, 192, 0.24);
+  background-image: url(../img/specialization-img-5.webp);
+}
+
+.specialization-6 {
+  background-color: rgba(255, 181, 86, 0.24);
+  background-image: url(../img/specialization-img-6.webp);
+}
+
+.specialization__btn:nth-of-type(2) {
+  background-color: transparent;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.specialization__btn:nth-of-type(2):hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.specialization__card:hover .specialization__info {
+  transform: translateY(0);
+}
+
+.specialization__card:hover .specialization__overflow {
+  overflow: visible;
+}
+
+.specialization .swiper-button-next,
+.specialization .swiper-button-prev {
+  top: 55%;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e2e9ed;
+  border-radius: 50%;
+}
+
+.specialization .swiper-button-prev,
+.specialization .swiper-rtl .swiper-button-next {
+  right: 3.5%;
+  left: auto;
+}
+
+.specialization .swiper-button-next,
+.specialization .swiper-rtl .swiper-button-prev {
+  right: 0;
+}
+
+.specialization .swiper-button-next:after,
+.specialization .swiper-rtl .swiper-button-prev:after,
+.specialization .swiper-button-prev:after,
+.specialization .swiper-rtl .swiper-button-next:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 10px;
+  background-image: url(../icon/black-shevron.svg);
+  background-size: 6px 10px;
+  background-position: center;
+}
+
+.specialization .swiper-button-prev:after,
+.specialization .swiper-rtl .swiper-button-next:after {
+  transform: rotate(180deg);
+}
+
+.specialization .swiper-free-mode > .swiper-wrapper {
+  transition-timing-function: linear;
+}

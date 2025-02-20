@@ -1,0 +1,369 @@
+.specialists {
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.specialists__container {
+  display: flex;
+  gap: 15px;
+  align-items: end;
+}
+
+.swiper__container {
+  position: relative;
+  width: 32%;
+}
+
+.specialists .swiper-specialists {
+  width: 90%;
+  height: 100px;
+  padding-top: 15px;
+}
+
+.swiper__container:nth-of-type(2) {
+  width: 68%;
+  height: 624px;
+}
+
+.specialists__card {
+  display: flex;
+  gap: var(--px32);
+  align-items: end;
+  justify-content: space-between; 
+  background-color: var(--white);
+}
+
+.autoplay-progress {
+  position: absolute;
+  left: 35%;
+  bottom: -4px;
+  z-index: 2;
+  width: 98px;
+  height: 98px;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 1px;
+  stroke: var(--orange);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+.slide-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #edf2f5;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  outline: 2px solid var(--white);
+}
+
+.outline--active {
+  transition: outline-color .4s ease;
+  outline-color: var(--orange);
+}
+
+.specialists .swiper-button-next,
+.specialists .swiper-button-prev {
+  top: 55%;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e2e9ed;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.specialists .swiper-button-prev,
+.specialists .swiper-rtl .swiper-button-next {
+  left: 0%;
+}
+
+.specialists .swiper-button-next,
+.specialists .swiper-rtl .swiper-button-prev {
+  left: 90%;
+}
+
+.specialists .swiper-free-mode > .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.specialists .swiper-button-next:after,
+.specialists .swiper-rtl .swiper-button-prev:after,
+.specialists .swiper-button-prev:after,
+.specialists .swiper-rtl .swiper-button-next:after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 10px;
+  background-image: url(../icon/black-shevron.svg);
+  background-size: 6px 10px;
+  background-position: center;
+}
+
+.specialists .swiper-button-prev:after,
+.specialists .swiper-rtl .swiper-button-next:after {
+  transform: rotate(180deg);
+}
+
+.specialists-1 {
+  background-image: url(../specialists/Abramova.webp);
+}
+.specialists-2 {
+  background-image: url(../specialists/Arefeva.webp);
+}
+.specialists-4 {
+  background-image: url(../specialists/Belyh.webp);
+}
+.specialists-5 {
+  background-image: url(../specialists/Butorina.webp);
+}
+.specialists-6 {
+  background-image: url(../specialists/Demeneva.webp);
+}
+.specialists-8 {
+  background-image: url(../specialists/Galoyan.webp);
+}
+.specialists-9 {
+  background-image: url(../specialists/Garber.webp);
+  background-size: 60px;
+}
+.specialists-10 {
+  background-image: url(../specialists/Gazetdinova.webp);
+}
+.specialists-11 {
+  background-image: url(../specialists/Gulyaev.webp);
+}
+.specialists-12 {
+  background-image: url(../specialists/Harcheva.webp);
+}
+.specialists-13 {
+  background-image: url(../specialists/Hvatova.webp);
+}
+.specialists-14 {
+  background-image: url(../specialists/Kanevskaya.webp);
+}
+.specialists-15 {
+  background-image: url(../specialists/Karpova.webp);
+}
+.specialists-16 {
+  background-image: url(../specialists/Paunovich.webp);
+}
+.specialists-17 {
+  background-image: url(../specialists/Kldiashvili.webp);
+  background-size: 75px;
+}
+.specialists-18 {
+  background-image: url(../specialists/Kondratovich.webp);
+}
+.specialists-19 {
+  background-image: url(../specialists/Kopylova.webp);
+}
+.specialists-20 {
+  background-image: url(../specialists/Kursanina.webp);
+  background-size: 85px;
+}
+.specialists-21 {
+  background-image: url(../specialists/Kuznetsova.webp);
+}
+.specialists-22 {
+  background-image: url(../specialists/Leiderman.webp);
+}
+.specialists-23 {
+  background-image: url(../specialists/Mashkov.webp);
+}
+.specialists-24 {
+  background-image: url(../specialists/Mitsenko.webp);
+  background-size: 75px;
+}
+.specialists-25 {
+  background-image: url(../specialists/Mostikov.webp);
+}
+.specialists-26 {
+  background-image: url(../specialists/Nadeina.webp);
+}
+.specialists-27 {
+  background-image: url(../specialists/Nikolaeva.webp);
+}
+.specialists-28 {
+  background-image: url(../specialists/Oblivantseva.webp);
+}
+.specialists-29 {
+  background-image: url(../specialists/Obuhova.webp);
+}
+.specialists-30 {
+  background-image: url(../specialists/Panait.webp);
+}
+.specialists-31 {
+  background-image: url(../specialists/Peresmehin.webp);
+}
+.specialists-32 {
+  background-image: url(../specialists/Petrova.webp);
+  background-size: 70px;
+}
+.specialists-33 {
+  background-image: url(../specialists/Popov.webp);
+  background-size: 70px;
+}
+.specialists-34 {
+  background-image: url(../specialists/Pytkeeva.webp);
+}
+.specialists-35 {
+  background-image: url(../specialists/Rykova.webp);
+  background-size: 65px;
+}
+.specialists-36 {
+  background-image: url(../specialists/Safonova.webp);
+  background-size: 65px;
+}
+.specialists-37 {
+  background-image: url(../specialists/Savran.webp);
+}
+.specialists-38 {
+  background-image: url(../specialists/Semenets.webp);
+}
+.specialists-39 {
+  background-image: url(../specialists/Semenova.webp);
+}
+.specialists-40 {
+  background-image: url(../specialists/Shalamova.webp);
+}
+.specialists-41 {
+  background-image: url(../specialists/Sharov.webp);
+}
+.specialists-42 {
+  background-image: url(../specialists/Shilina.webp);
+}
+.specialists-43 {
+  background-image: url(../specialists/Solodov.webp);
+}
+.specialists-44 {
+  background-image: url(../specialists/Suslina.webp);
+}
+.specialists-45 {
+  background-image: url(../specialists/Tokar.webp);
+}
+.specialists-46 {
+  background-image: url(../specialists/Uskov.webp);
+}
+.specialists-47 {
+  background-image: url(../specialists/Uskova.webp);
+}
+.specialists-48 {
+  background-image: url(../specialists/Ustimova.webp);
+}
+.specialists-49 {
+  background-image: url(../specialists/Veisgeim.webp);
+  background-size: 75px;
+}
+.specialists-50 {
+  background-image: url(../specialists/Zamyatin.webp);
+}
+.specialists-51 {
+  background-image: url(../specialists/Zhukova.webp);
+}
+
+.specialists__img {
+  width: 47%;
+  height: 630px;
+  border-radius: 20px;
+  background-color: #EDF2F5;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 400px;
+}
+
+.specialists__img.specialists-1,
+.specialists__img.specialists-3,
+.specialists__img.specialists-9,
+.specialists__img.specialists-14,
+.specialists__img.specialists-27 {
+  background-size: 330px;
+}
+
+
+.specialists__img.specialists-47 {
+  background-size: 300px;
+}
+
+
+.specialists__img.specialists-28,
+.specialists__img.specialists-30,
+.specialists__img.specialists-32,
+.specialists__img.specialists-33,
+.specialists__img.specialists-35,
+.specialists__img.specialists-36,
+.specialists__img.specialists-40,
+.specialists__img.specialists-42 {
+  background-size: 350px;
+}
+
+.specialists__img.specialists-18,
+.specialists__img.specialists-48,
+.specialists__img.specialists-51 {
+  background-size: 410px;
+}
+
+.specialists__img.specialists-20 {
+  background-size: 400px;
+}
+
+.specialists__info {
+  width: 52%;
+}
+
+.specialists__name {
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 49%;
+  margin-bottom: 24px;
+}
+
+.specialists__profession,
+.specialists__consultation  {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.specialists__specialization-title {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.specialists__list {
+  margin: 0;
+  padding-left: 25px;
+  margin-bottom: 24px;
+}
+
+.specialists__consultation::before {
+  content: "Консультация";
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7C90A0;
+}
+
+.specialists__btns {
+  display: flex;
+  gap: var(--px32);
+}
+
+.specialists__btns .modal-card {
+  border: 1px solid var(--orange);
+  border-radius: 6px;
+  color: var(--orange);
+  background-color: transparent;
+}
