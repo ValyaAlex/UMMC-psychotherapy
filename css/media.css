@@ -149,8 +149,8 @@
     background-size: 45px;
   }
 
-  .specialists__list > .specialists__item:nth-of-type(3),
-  .specialists__list > .specialists__item:nth-of-type(4) {
+  .specialists__list>.specialists__item:nth-of-type(3),
+  .specialists__list>.specialists__item:nth-of-type(4) {
     display: none;
   }
 
@@ -198,7 +198,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1090px) {
   .header__nav {
     position: absolute;
     display: flex;
@@ -325,6 +325,10 @@
     display: block;
   }
 
+  .header__tel {
+    display: none;
+  }
+
   .hero__plus {
     width: 100%;
   }
@@ -394,10 +398,11 @@
 }
 
 @media (max-width: 850px) {
-  section {
+  .section {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .hero::before {
     background-size: cover;
   }
@@ -463,7 +468,7 @@
     height: 87%;
   }
 
-  .hero .swiper-horizontal > .swiper-pagination-bullets,
+  .hero .swiper-horizontal>.swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
@@ -471,10 +476,8 @@
   }
 
   .hero .swiper-pagination-bullet {
-    width: var(
-      --swiper-pagination-bullet-width,
-      var(--swiper-pagination-bullet-size, 8px)
-    );
+    width: var(--swiper-pagination-bullet-width,
+        var(--swiper-pagination-bullet-size, 8px));
     border-radius: 20px;
     transition: width 0.4s ease;
   }
@@ -483,9 +486,11 @@
     background: var(--orange);
     width: 30px;
   }
+
   .hospital-swiper-2 {
     height: 675px;
   }
+
   .modal {
     width: 600px;
   }
@@ -594,7 +599,7 @@
 }
 
 @media (max-width: 720px) {
-  section {
+  .section {
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -622,6 +627,10 @@
     padding: 0;
   }
 
+  .header__nav {
+    width: 70%;
+  }
+
   .hero__banner,
   .hero__block {
     padding-left: 10px;
@@ -645,6 +654,7 @@
   .about__slide {
     height: 490px;
   }
+
   .specialization__cards {
     height: 490px;
   }
@@ -653,7 +663,7 @@
     background-size: 380px 380px;
   }
 
-  body {
+  .body {
     font-size: 14px;
     line-height: 20px;
   }
@@ -1015,6 +1025,7 @@
   .modal {
     width: 93%;
   }
+
   .modal__block-title {
     font-size: 16px;
   }
@@ -1022,6 +1033,7 @@
   .modal__article-link {
     width: 100%;
   }
+
   .autoplay-progress {
     left: 37.1%;
   }
@@ -1057,6 +1069,7 @@
   .header__logo-img.mobile {
     width: 35px;
   }
+
   .autoplay-progress {
     left: 36.6%;
   }

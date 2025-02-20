@@ -1,14 +1,11 @@
 .header {
   position: sticky;
   top: 0;
-  opacity: 0;
   z-index: 20;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
   padding: 14px 0;
-  transform: translateY(-200px);
   transition: 0.5s ease;
-  visibility: hidden;
 }
 
 .header__container {
@@ -19,13 +16,6 @@
 
 .header__logo-img {
   width: 160px;
-}
-
-.header.header--active {
-  visibility: visible;
-  opacity: 1;
-  transform: none;
-  transition: 0.5s ease;
 }
 
 .header__nav {
@@ -127,4 +117,47 @@
 
 .header__contacts-icon {
   fill: var(--orange);
+}
+
+.header__tel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.4s ease;
+}
+
+.header__tel:focus {
+  color: var(--active-orange);
+}
+
+.header__tel:hover {
+  color: var(--orange);
+}
+
+.header__tel:active {
+  color: var(--orange);
+}
+
+.header__icon {
+  fill: var(--black);
+  transition: fill 0.4s ease;
+}
+
+.header__tel:focus .header__icon {
+  fill: var(--active-orange);
+}
+
+.header__tel:hover .header__icon {
+  fill: var(--orange);
+}
+
+.header__tel:active .header__icon {
+  fill: var(--active-orange);
+}
+
+.header__feedback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
