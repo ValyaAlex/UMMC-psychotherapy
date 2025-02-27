@@ -655,6 +655,10 @@
     height: 490px;
   }
 
+  .about__slide:hover {
+    transform: none;
+  }
+
   .specialization__cards {
     height: 490px;
   }
