@@ -80,7 +80,7 @@ img {
 
 .body {
   min-width: 320px;
-  font-family: "Core Sans N 45 Light", sans-serif;
+  font-family: "Core Sans A 45 Regular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: var(--black);
@@ -89,7 +89,7 @@ img {
 }
 
 .title {
-  font-family: "Core Sans N 65 Bold", sans-serif;
+  font-family: "Core Sans A 65 Bold", sans-serif;
   font-size: 32px;
   margin-bottom: 40px;
   line-height: 40px;
