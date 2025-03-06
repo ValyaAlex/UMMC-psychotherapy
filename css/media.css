@@ -206,7 +206,8 @@
     justify-content: start;
     align-items: start;
     background-color: var(--white);
-    top: 90px;
+    top: 75px;
+    /* изменен топ*/
     left: 0;
     width: 50%;
     min-width: 250px;
@@ -326,6 +327,7 @@
   }
 
   .header__tel {
+    /* Добавлен класс */
     display: none;
   }
 
@@ -628,6 +630,7 @@
   }
 
   .header__nav {
+    /* Добавлен класс чтобы сделать пошире меню */
     width: 70%;
   }
 
@@ -656,6 +659,7 @@
   }
 
   .about__slide:hover {
+    /* Добавлен класс для отмены ховера */
     transform: none;
   }
 

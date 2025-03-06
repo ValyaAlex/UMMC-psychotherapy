@@ -60,19 +60,20 @@ img {
 }
 
 @font-face {
-  font-family: "Core Sans N 45 Light";
-  src: local("Core Sans N 45 Light"), local("Core Sans N 45-Light"),
-    url("../fonts/core_sans_n_35_light.woff2") format("woff2");
+  /* шрифты поменяла для себя, можно проигнорировать */
+  font-family: "Core Sans A 45 Regular";
+  src: local("Core Sans A 45 Regular"), local("Core Sans A 45-Regular"),
+    url("../fonts/CoreSansA45Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Core Sans N 65 Bold";
-  src: local("Core Sans N45 Bold"), local("Core Sans N 65-Bold"),
-    url("../fonts/core_sans_n_65_bold.woff2") format("woff2");
-  font-weight: 500;
+  font-family: "Core Sans A 65 Bold";
+  src: local("Core Sans A 65 Bold"), local("Core Sans A 65-Bold"),
+    url("../fonts/CoreSansA65Bold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }

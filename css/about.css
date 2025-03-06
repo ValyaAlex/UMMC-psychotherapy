@@ -28,6 +28,7 @@
 
 .about .about-swiper {
   height: 710px;
+  /* изменена высота слайдера */
   padding: 120px 0 40px 32px;
 }
 
@@ -41,6 +42,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 470px;
+  /* изменена высота карточки*/
   padding: var(--px32);
   border-radius: 20px;
   background-repeat: no-repeat;
