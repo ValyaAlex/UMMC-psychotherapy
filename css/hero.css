@@ -45,12 +45,12 @@
   background-position: right center;
   background-size: contain;
   grid-row: 1 / 3;
-    grid-column: 2;
+  grid-column: 2;
 }
 
 .hero__title {
   position: relative;
-  font-family: "Core Sans N 65 Bold", sans-serif;
+  font-family: "Core Sans A 65 Bold", sans-serif;
   padding-top: 64px;
   font-size: 44px;
   line-height: 52px;
@@ -164,7 +164,7 @@
 }
 
 .hero__check,
-.hero__check:checked ~ .show-more {
+.hero__check:checked~.show-more {
   display: none;
 }
 
@@ -183,7 +183,7 @@
   transition: color 0.4s ease;
 }
 
-.hero__check:checked ~ .hero__directions .hero__direction:nth-child(1n + 6) {
+.hero__check:checked~.hero__directions .hero__direction:nth-child(1n + 6) {
   max-height: 999px;
   opacity: 1;
   position: relative;
@@ -194,4 +194,3 @@
 .mobile {
   display: none;
 }
-
