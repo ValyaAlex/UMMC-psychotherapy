@@ -26,9 +26,9 @@
   <script defer src="libs/accordion.js"></script>
   <link rel="stylesheet" href="libs/accordion.css" />
 
-  <script defer src="js/header-animation.js"></script>
   <script defer src="js/swipers.js"></script>
   <script defer src="js/burger.js"></script>
+  <script defer src="js/programs-btn.js"></script>
   <script defer src="js/hover-controller.js"></script>
   <script defer src="js/accordion.js"></script>
   <script defer src="libs/maps.js"></script>
@@ -926,6 +926,88 @@
         </div>
         <button class="btn-reset swiper-button-prev swiper-prev-hospital-2" aria-label="К предыдущему слайду"></button>
         <button class="btn-reset swiper-button-next swiper-next-hospital-2" aria-label="К следующему слайду"></button>
+      </div>
+    </section>
+    <section class="section programs">
+      <div class="container">
+        <h2 class="margin-reset title">Программы стационара</h2>
+        <div class="programs-desktop">
+          <input class="programs__check" type="checkbox" id="show-more-2" />
+          <div class="programs__cards">
+            <div class="programs__card modal-card" data-path="program-1">
+              <h3 class="margin-reset programs__title">Программа «Антистресс»</h3>
+              <p class="margin-reset programs__descr">Продолжительность 3 дня</p>
+              <p class="margin-reset programs__text">
+                Программа «Антистресс», разработанная в центре психотерапии “УГМК-Здоровье”, предлагает комплексный
+                подход к восстановлению ментального здоровья и гармонии.
+              </p>
+            </div>
+            <div class="programs__card modal-card" data-path="program-2">
+              <h3 class="margin-reset programs__title">
+                Программа «Детокс-алко»
+              </h3>
+              <p class="margin-reset programs__descr">Продолжительность 3 дня</p>
+              <p class="margin-reset programs__text">
+                Программа «Детокс-алко» — это комплексная программа для восстановления физического и психического
+                здоровья, которая помогает справиться с последствиями злоупотребления алкоголем и улучшить общее
+                самочувствие.
+              </p>
+            </div>
+            <div class="programs__card modal-card" data-path="program-3">
+              <h3 class="margin-reset programs__title">Программа «Антистресс»</h3>
+              <p class="margin-reset programs__descr">Продолжительность 5 дней</p>
+              <p class="margin-reset programs__text">
+                Программа «Антистресс», разработанная в центре психотерапии “УГМК-Здоровье”, предлагает комплексный
+                подход к восстановлению ментального здоровья и гармонии.
+              </p>
+            </div>
+          </div>
+          <label class="show-more programs__btn" for="show-more-2">
+            <span class="show">Посмотреть все</span>
+          </label>
+        </div>
+      </div>
+      </div>
+      <div class="programs-mobile">
+        <div class="swiper programs-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="programs__card modal-card" data-path="program-1">
+                <h3 class="margin-reset programs__title">Программа «Антистресс»</h3>
+                <p class="margin-reset programs__descr">Продолжительность 3 дня</p>
+                <p class="margin-reset programs__text">
+                  Программа «Антистресс», разработанная в центре психотерапии “УГМК-Здоровье”, предлагает комплексный
+                  подход к восстановлению ментального здоровья и гармонии.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="programs__card modal-card" data-path="program-2">
+                <h3 class="margin-reset programs__title">
+                  Программа «Детокс-алко»
+                </h3>
+                <p class="margin-reset programs__descr">Продолжительность 3 дня</p>
+                <p class="margin-reset programs__text">
+                  Программа «Детокс-алко» — это комплексная программа для восстановления физического и психического
+                  здоровья, которая помогает справиться с последствиями злоупотребления алкоголем и улучшить общее
+                  самочувствие.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="programs__card modal-card" data-path="program-3">
+                <h3 class="margin-reset programs__title">Программа «Антистресс»</h3>
+                <p class="margin-reset programs__descr">Продолжительность 5 дней</p>
+                <p class="margin-reset programs__text">
+                  Программа «Антистресс», разработанная в центре психотерапии “УГМК-Здоровье”, предлагает комплексный
+                  подход к восстановлению ментального здоровья и гармонии.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
       </div>
     </section>
     <section class="section events" id="events">
@@ -12408,6 +12490,176 @@
                 <time datetime="2022-06-28T12:00:00Z">28 июня 2022 г.</time>
               </a>
             </div>
+          </div>
+          <div class="modal__btn">
+            <button class="btn-reset button modal__btn-close">Понятно</button>
+          </div>
+        </div>
+
+
+        <div class="modal" data-target="program-1">
+          <h3 class="margin-reset modal__title programs__title">Программа «Антистресс»</h3>
+          <p class="margin-reset programs__descr">Продолжительность 3 дня</p>
+          <div class="modal__content scrollbar">
+            <p class="margin-reset modal-overlay__text">
+              В современном мире, где каждый день приносит новые вызовы и стрессовые ситуации, важно найти способ
+              восстановить душевное равновесие и поддержать организм. Программа «Антистресс», разработанная в центре
+              психотерапии “УГМК-Здоровье”, предлагает комплексный подход к восстановлению ментального здоровья и
+              гармонии.
+            </p>
+            <h4 class="modal__name">Что даст вам программа?</h4>
+            <ol class="modal__list">
+              <li class="modal__item">Избавление от последствий стресса.</li>
+              <li class="modal__item">Контроль над своими мыслями и эмоциями.</li>
+              <li class="modal__item">Помощь в определении жизненных ценностей и приоритетов.</li>
+              <li class="modal__item">Возможность отдохнуть и сменить обстановку.</li>
+              <li class="modal__item">Цифровой детокс.</li>
+              <li class="modal__item">Эффективные оздоровительные и антистрессовые процедуры.</li>
+            </ol>
+            <h4 class="modal__name">Что входит в программу?
+            </h4>
+            <ul class="modal__list">
+              <li class="modal__item"><strong>Подводный лечебный душ-массаж (3 сеанса).</strong> Эта процедура помогает
+                снять мышечное
+                напряжение, улучшить кровообращение и повысить общий тонус организма.</li>
+              <li class="modal__item"><strong>Терапия в кедровой бочке (3 сеанса).</strong> Сеансы в кедровой бочке
+                способствуют
+                улучшению кровообращения, укреплению иммунитета и снятию стресса.</li>
+              <li class="modal__item"><strong>Биоакустическая коррекция (3 сеанса).</strong> Биоакустическая коррекция
+                помогает
+                нормализовать работу нервной системы, улучшить сон и общее самочувствие.</li>
+              <li class="modal__item"><strong>Групповая психотерапия (5 сеансов по 2 часа).</strong> Групповые сеансы
+                психотерапии
+                предоставляют возможность обсудить свои переживания с другими участниками и получить поддержку.</li>
+              <li class="modal__item"><strong>Курирование врачом-психиатром.</strong> Индивидуальные консультации с
+                опытным
+                врачом-психиатром помогут глубже понять причины стресса и найти эффективные способы его преодоления.
+              </li>
+              <li class="modal__item"><strong>Утренняя йога.</strong> Утренние занятия йогой помогают настроиться на
+                позитивный лад,
+                улучшить концентрацию и зарядиться энергией на весь день.</li>
+              <li class="modal__item"><strong>Инфузионная терапия (капельницы).</strong> Инфузионная терапия
+                способствует улучшению
+                общего состояния организма, восстановлению сил и улучшению настроения.</li>
+            </ul>
+            <p class="margin-reset modal-overlay__text">
+              Программа «Антистресс» в центре психотерапии “УГМК-Здоровье” — это возможность сделать паузу, разобраться
+              в своих мыслях и найти путь к гармонии. Всего 3 дня — и вы почувствуете себя обновлёнными и готовыми к
+              новым вызовам.
+            </p>
+            <p class="margin-reset modal-overlay__text">
+              Запишитесь на программу «Антистресс» уже сегодня и начните свой путь к здоровью и благополучию!
+            </p>
+            <p class="margin-reset modal-overlay__text">
+              Стоимость с проживанием и питанием в одноместной палате: 81 600 руб.
+            </p>
+            <p class="margin-reset modal-overlay__text">
+              Стоимость с проживанием и питанием в двухместной палате: 73 800 руб.
+            </p>
+          </div>
+          <div class="modal__btn">
+            <button class="btn-reset button modal__btn-close">Понятно</button>
+          </div>
+        </div>
+
+        <div class="modal" data-target="program-2">
+          <h3 class="margin-reset modal__title programs__title">Программа «Детокс-алко»</h3>
+          <p class="margin-reset programs__descr">Продолжительность 3 дня</p>
+          <div class="modal__content scrollbar">
+            <p class="margin-reset modal-overlay__text">
+              Программа «Детокс-алко» — это комплексная программа для восстановления физического и психического
+              здоровья, которая помогает справиться с последствиями злоупотребления алкоголем и улучшить общее
+              самочувствие.
+            </p>
+            <h4 class="modal__name">Что входит в программу?
+            </h4>
+            <ul class="modal__list">
+              <li class="modal__item"><strong>Групповая психотерапия (5 сеансов по 2 часа).</strong> В рамках групповой
+                терапии вы сможете обсудить свои проблемы с другими участниками программы, получить поддержку и
+                научиться справляться с трудностями.</li>
+              <li class="modal__item"><strong>Прием невролога.</strong> Комплексное обследование у невролога поможет
+                выявить возможные проблемы, связанные с нервной системой, и разработать индивидуальный план лечения.
+              </li>
+              <li class="modal__item"><strong>ЭЭГ головного мозга.</strong> Электроэнцефалография (ЭЭГ) позволяет
+                оценить электрическую активность мозга и выявить возможные отклонения, что помогает в диагностике и
+                лечении неврологических заболеваний.</li>
+              <li class="modal__item"><strong>Транскраниальная магнитная стимуляция (ТМС).</strong> Эта инновационная
+                методика стимулирует определенные области мозга, улучшая его функции и способствуя восстановлению после
+                злоупотребления алкоголем. Проводится 3 сеанса.</li>
+              <li class="modal__item"><strong>Курирование врачом-психиатром.</strong> Врач-психиатр будет следить за
+                вашим состоянием на протяжении всей программы, обеспечивая индивидуальный подход и поддержку.
+              </li>
+              <li class="modal__item"><strong>Утренняя йога.</strong> Утренние занятия йогой помогут вам зарядиться
+                энергией, улучшить настроение и подготовиться к новому дню.</li>
+              <li class="modal__item"><strong>Инфузионная терапия (капельницы).</strong> Инфузионная терапия
+                способствует быстрому выведению токсинов из организма, улучшает общее самочувствие и восстанавливает
+                водно-солевой баланс.</li>
+            </ul>
+          </div>
+          <div class="modal__btn">
+            <button class="btn-reset button modal__btn-close">Понятно</button>
+          </div>
+        </div>
+
+        <div class="modal" data-target="program-3">
+          <h3 class="margin-reset modal__title programs__title">Программа «Антистресс»</h3>
+          <p class="margin-reset programs__descr">Продолжительность 5 дней</p>
+          <div class="modal__content scrollbar">
+            <p class="margin-reset modal-overlay__text">
+              В современном мире, где каждый день приносит новые вызовы и стрессовые ситуации, важно найти способ
+              восстановить душевное равновесие и поддержать организм. Программа «Антистресс», разработанная в центре
+              психотерапии “УГМК-Здоровье”, предлагает комплексный подход к восстановлению ментального здоровья и
+              гармонии.
+            </p>
+            <h4 class="modal__name">Что даст вам программа?</h4>
+            <ol class="modal__list">
+              <li class="modal__item">Избавление от последствий стресса.</li>
+              <li class="modal__item">Контроль над своими мыслями и эмоциями.</li>
+              <li class="modal__item">Помощь в определении жизненных ценностей и приоритетов.</li>
+              <li class="modal__item">Возможность отдохнуть и сменить обстановку.</li>
+              <li class="modal__item">Цифровой детокс.</li>
+              <li class="modal__item">Эффективные оздоровительные и антистрессовые процедуры.</li>
+            </ol>
+            <h4 class="modal__name">Что входит в программу?
+            </h4>
+            <ul class="modal__list">
+              <li class="modal__item"><strong>Подводный лечебный душ-массаж (5 сеансов).</strong> Эта процедура помогает
+                снять мышечное
+                напряжение, улучшить кровообращение и повысить общий тонус организма.</li>
+              <li class="modal__item"><strong>Терапия в кедровой бочке (5 сеансов).</strong> Сеансы в кедровой бочке
+                способствуют
+                улучшению кровообращения, укреплению иммунитета и снятию стресса.</li>
+              <li class="modal__item"><strong>Биоакустическая коррекция (5 сеансов).</strong> Биоакустическая коррекция
+                помогает
+                нормализовать работу нервной системы, улучшить сон и общее самочувствие.</li>
+              <li class="modal__item"><strong>Групповая психотерапия (8 сеансов по 2 часа).</strong> Групповые сеансы
+                психотерапии
+                предоставляют возможность обсудить свои переживания с другими участниками и получить поддержку.</li>
+              <li class="modal__item"><strong>Курирование врачом-психиатром.</strong> Индивидуальные консультации с
+                опытным
+                врачом-психиатром помогут глубже понять причины стресса и найти эффективные способы его преодоления.
+              </li>
+              <li class="modal__item"><strong>Утренняя йога.</strong> Утренние занятия йогой помогают настроиться на
+                позитивный лад,
+                улучшить концентрацию и зарядиться энергией на весь день.</li>
+              <li class="modal__item"><strong>Инфузионная терапия (капельницы).</strong> Инфузионная терапия
+                способствует улучшению
+                общего состояния организма, восстановлению сил и улучшению настроения.</li>
+            </ul>
+            <p class="margin-reset modal-overlay__text">
+              Программа «Антистресс» в центре психотерапии “УГМК-Здоровье” — это возможность сделать паузу, разобраться
+              в своих мыслях и найти путь к гармонии. Всего 5 дней — и вы почувствуете себя обновлёнными и готовыми к
+              новым вызовам.
+            </p>
+            <p class="margin-reset modal-overlay__text">
+              Запишитесь на программу «Антистресс» уже сегодня и начните свой путь к здоровью и благополучию!
+            </p>
+            <p class="margin-reset modal-overlay__text">
+              Стоимость с проживанием и питанием в одноместной палате: 135 350 руб.
+            </p>
+            <p class="margin-reset modal-overlay__text">
+              Стоимость с проживанием и питанием в двухместной палате: 122 350 руб.
+            </p>
           </div>
           <div class="modal__btn">
             <button class="btn-reset button modal__btn-close">Понятно</button>

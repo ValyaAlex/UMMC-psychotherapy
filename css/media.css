@@ -196,6 +196,10 @@
   .specialists {
     padding-bottom: 80px;
   }
+
+  .programs__card {
+    width: 48%
+  }
 }
 
 @media (max-width: 1090px) {
@@ -396,6 +400,11 @@
   .specialization__btns {
     display: flex;
     gap: 6px;
+  }
+
+
+  .programs__card {
+    width: 47%;
   }
 }
 
@@ -598,6 +607,26 @@
   .modal__article-link {
     width: 47%;
   }
+
+  .programs__cards {
+    gap: 20;
+  }
+
+  .programs__card {
+    width: 46%;
+  }
+
+  .programs .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,
+        var(--swiper-pagination-bullet-size, 8px));
+    border-radius: 20px;
+    transition: width 0.4s ease;
+  }
+
+  .programs .swiper-pagination-bullet-active {
+    background: var(--orange);
+    width: 30px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -647,6 +676,10 @@
   .hero__title {
     font-size: 28px;
     line-height: 32px;
+  }
+
+  .hero__pluses {
+    padding-bottom: 80px;
   }
 
   .hero__banner-right {
@@ -733,8 +766,8 @@
   }
 
   .about .about-swiper {
-    height: 620px;
-    padding: 0 0 40px 0;
+    height: 540px;
+    padding: 0;
   }
 
   .about__overflow {
@@ -974,6 +1007,30 @@
     background-size: 105px;
   }
 
+  .programs-desktop {
+    display: none;
+  }
+
+  .programs-mobile {
+    display: block;
+  }
+
+  .programs__card {
+    width: auto;
+    height: 200px;
+  }
+
+  .programs-swiper {
+    height: 300px;
+  }
+
+  .modal .programs__descr {
+    padding: 15px;
+  }
+
+  .modal__title.programs__title {
+    margin-bottom: 0px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1065,6 +1122,44 @@
 
   .swiper-specialists-2 {
     height: 640px;
+  }
+
+  .programs-swiper {
+    height: 400px;
+  }
+
+  .programs__card {
+    height: 300px;
+  }
+
+  .events {
+    margin-top: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about__title,
+  .hospital {
+    padding-top: 80px;
+  }
+
+  .hospital {
+    padding-bottom: 40px;
+  }
+
+  .programs {
+    padding-top: 40px;
+  }
+
+  .hero .hero-swiper {
+    height: 500px;
+  }
+
+  .hero .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 8px;
   }
 }
 

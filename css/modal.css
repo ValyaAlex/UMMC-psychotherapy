@@ -243,6 +243,7 @@
   content: "—";
   display: block;
 }
+
 .modal__progress-item,
 .modal__training-item {
   padding: 20px 0;
@@ -289,11 +290,11 @@
   border: none;
 }
 
-.modal__training > [id*="see-more-training"] {
+.modal__training>[id*="see-more-training"] {
   display: none;
 }
 
-.modal__training > [id*="see-more-training"] ~ ul li:nth-child(3)::after {
+.modal__training>[id*="see-more-training"]~ul li:nth-child(3)::after {
   content: "";
   display: block;
   position: absolute;
@@ -304,32 +305,23 @@
   background: linear-gradient(to top, #fff, #fff0);
 }
 
-.modal__training
-  > [id*="see-more-training"]:checked
-  ~ ul
-  li:nth-child(3)::after {
+.modal__training>[id*="see-more-training"]:checked~ul li:nth-child(3)::after {
   content: "";
   background: none;
 }
 
-.modal__training > [id*="see-more-training"]:checked ~ ul li:nth-child(1n + 4) {
+.modal__training>[id*="see-more-training"]:checked~ul li:nth-child(1n + 4) {
   max-height: 999px;
   opacity: 1;
   display: block;
   transition: 0.4s ease;
 }
 
-.modal__training
-  > [id*="see-more-training"]:checked
-  ~ .modal__training-btn
-  .loaded {
+.modal__training>[id*="see-more-training"]:checked~.modal__training-btn .loaded {
   display: block;
 }
 
-.modal__training
-  > [id*="see-more-training"]:checked
-  ~ .modal__training-btn
-  .unloaded {
+.modal__training>[id*="see-more-training"]:checked~.modal__training-btn .unloaded {
   display: none;
 }
 
