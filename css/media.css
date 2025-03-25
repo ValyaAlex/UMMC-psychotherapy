@@ -202,7 +202,7 @@
   }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1215px) {
   .header__nav {
     position: absolute;
     display: flex;
