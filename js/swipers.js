@@ -123,7 +123,7 @@ const swiperSpecialization = new Swiper(".specialization__cards", {
     },
 
     1700: {
-      slidesPerView: 4.5,
+      slidesPerView: 4.4,
       spaceBetween: 32,
     },
   },
@@ -279,6 +279,27 @@ const swiperProgramsMobile = new Swiper(".programs-swiper", {
   initialSlide: 0,
   slidesPerView: 1.1,
   spaceBetween: 5,
+  centeredSlides: true,
+  navigation: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    720: {
+      slidesPerView: 1.5,
+      spaceBetween: 15,
+    },
+  },
+});
+
+
+const swiperEvents = new Swiper(".events-swiper", {
+  direction: "horizontal",
+  initialSlide: 0,
+  slidesPerView: 1.1,
+  spaceBetween: 15,
   centeredSlides: true,
   navigation: false,
   pagination: {

@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <title>События</title>
+
+    <link href="../fonts/CoreSansA45Regular.woff2" as="font" crossorigin />
+    <link href="../fonts/CoreSansA65Bold.woff2" as="font" crossorigin />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../icon/favicon.ico" type="image/x-icon" />
+
+    <script defer src="../js/burger.js"></script>
+    <script defer src="../js/modal.js"></script>
+    <script defer src="../js/filter.js"></script>
+    <script defer src="../js/horisontalScroll.js"></script>
+</head>
+
+<body class="body">
+    <div class="responsive-overlay"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <button aria-label="Открыть меню" class="btn-reset burger">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Huge-icon/menu/outline/menu-line-horizontal 01">
+                            <path id="Vector" d="M8.16663 9.33334H14M8.16663 14H19.8333M14 18.6667H19.8333"
+                                stroke="#909EAA" stroke-linecap="round"></path>
+                        </g>
+                    </svg>
+                    <span class="burger__line"></span><span class="burger__line"></span>
+                </button>
+                <a href="https://www.ugmk-clinic.ru/" class="header__logo">
+                    <img class="header__logo-img desktop" loading="lazy" alt="логотип 'УГМК - Здоровье'"
+                        src="https://www.ugmk-clinic.ru/static/mobile_app/www/assets/images/logo.png" />
+
+                    <img class="header__logo-img mobile" loading="lazy" alt="логотип 'УГМК - Здоровье'"
+                        src="../icon/logo-small.svg" />
+                </a>
+                <div class="header__nav">
+                    <nav class="nav">
+                        <ul class="list-reset nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="../index.html#what">Что лечим?</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="../index.html#who">К кому обратиться</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="../index.html#hospital">Стационар</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="../index.html#events">События</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="../index.html#specialists">Специалисты</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__contacts">
+                        <ul class="list-reset header__contacts-list">
+                            <li class="header__contacts-item">
+                                <a href="tel:83432830808" class="header__contacts-link tel">+7 (343) 283 08 08</a>
+                            </li>
+                            <li class="header__contacts-item">
+                                <a href="#" class="header__contacts-link address">г. Екатеринбург, ул. Уральская,
+                                    52А</a>
+                            </li>
+                            <li class="header__contacts-item">
+                                <a href="#" class="header__contacts-link work">с 8:00 до 20:00 |
+                                    Стационар:&nbsp;круглосуточно</a>
+                            </li>
+                            <li class="header__contacts-item">
+                                <a href="mailto:info@ugmk-clinic.ru"
+                                    class="header__contacts-link email">info@ugmk-clinic.ru</a>
+                            </li>
+                        </ul>
+                        <div class="header__contacts__icons">
+                            <a href="https://vk.com/ugmkclinic" class="header__contacts-btn vk">
+                                <svg class="header__contacts-icon" width="26" height="15" viewBox="0 0 26 15"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.5845 10.0889C22.5845 10.0889 22.9479 10.4612 23.6748 11.2058C24.4017 11.9504 24.8973 12.5518 25.1616 13.01C25.1822 13.055 25.1864 13.0591 25.1864 13.0591C25.2855 13.2391 25.3474 13.3945 25.3722 13.5255C25.397 13.6564 25.3846 13.7709 25.3351 13.8691C25.2525 14.0328 25.0996 14.1555 24.8766 14.2373C24.6536 14.3192 24.4925 14.3682 24.3934 14.3846C24.3934 14.3846 23.7987 14.3846 22.6093 14.3846C21.4198 14.3846 20.8003 14.3846 20.7508 14.3846C20.6351 14.3846 20.4534 14.356 20.2056 14.2987C19.9578 14.2414 19.6687 14.0982 19.3383 13.8691C19.0905 13.7055 18.8468 13.4927 18.6073 13.2309C18.3677 12.9691 18.1323 12.7072 17.9011 12.4454C17.5541 12.0363 17.2237 11.6803 16.9099 11.3776C16.596 11.0748 16.2821 10.9235 15.9682 10.9235C15.9352 10.9235 15.898 10.9276 15.8567 10.9357C15.8154 10.9439 15.7782 10.9562 15.7452 10.9726C15.5139 11.038 15.2785 11.2589 15.039 11.6353C14.7994 12.0117 14.6797 12.6418 14.6797 13.5255C14.6797 13.8037 14.5971 14.0164 14.4319 14.1637C14.2667 14.311 14.1015 14.3846 13.9363 14.3846C13.9363 14.3846 13.6719 14.3846 13.1433 14.3846C12.6147 14.3846 12.3256 14.3846 12.276 14.3846C11.9952 14.3846 11.2311 14.2373 9.98385 13.9428C8.73659 13.6482 7.46043 12.8218 6.15535 11.4635C5.36239 10.6289 4.59834 9.63475 3.8632 8.48103C3.12806 7.32731 2.47965 6.22679 1.91797 5.17944C1.35629 4.1321 0.906123 3.23613 0.567462 2.49153C0.228801 1.74693 0.0594724 1.36646 0.0594724 1.35009C-0.0396481 1.13735 -0.0148683 0.973703 0.133812 0.859148C0.282493 0.744596 0.455951 0.687319 0.654192 0.687319H4.32163C4.56943 0.687319 4.74289 0.748686 4.84201 0.871424C4.94113 0.994158 5.02373 1.12099 5.08981 1.2519C5.15589 1.39919 5.30457 1.74284 5.53585 2.28288C5.76713 2.82292 6.08101 3.43659 6.47749 4.12392C7.12177 5.23672 7.65041 6.0345 8.06341 6.51726C8.47641 7.00002 8.83985 7.2414 9.15373 7.2414C9.21981 7.2414 9.28176 7.23322 9.33957 7.21685C9.3974 7.20049 9.45108 7.17594 9.50064 7.14321C9.91365 6.93047 10.1243 6.29634 10.1325 5.24081C10.1408 4.18528 10.1367 3.51024 10.1201 3.21567C10.1201 3.16658 10.1036 2.91702 10.0706 2.46698C10.0375 2.01695 9.91365 1.64466 9.69888 1.35009C9.5502 1.15371 9.36436 1.01052 9.14133 0.920518C8.91831 0.830511 8.73247 0.769144 8.58379 0.736414C8.63335 0.670956 8.69942 0.601404 8.78203 0.527764C8.86463 0.454121 8.95548 0.384572 9.05461 0.319114C9.33545 0.188195 9.71127 0.102279 10.1821 0.061367C10.6529 0.0204546 11.1361 0 11.6317 0H12.2017C12.7468 0.0163637 13.1268 0.0409124 13.3415 0.0736398C13.5563 0.10637 13.7628 0.147283 13.961 0.196377C14.3575 0.294565 14.5888 0.507306 14.6549 0.834602C14.721 1.1619 14.7375 1.7592 14.7044 2.62654C14.6879 2.88838 14.6755 3.1584 14.6673 3.4366C14.659 3.7148 14.6549 4.01754 14.6549 4.34484C14.6549 4.42666 14.6549 4.5044 14.6549 4.57804C14.6549 4.65168 14.6549 4.72941 14.6549 4.81124C14.6384 5.25309 14.6508 5.69902 14.6921 6.14905C14.7334 6.59909 14.9192 6.92229 15.2496 7.11867C15.2826 7.1514 15.3239 7.17594 15.3735 7.19231C15.4231 7.20867 15.4726 7.21685 15.5222 7.21685C15.6213 7.21685 15.865 7.08594 16.2532 6.8241C16.6414 6.56226 17.2898 5.67039 18.1984 4.14847C18.5784 3.47751 18.9046 2.81883 19.1772 2.17242C19.4498 1.52601 19.6026 1.17008 19.6357 1.10462C19.6522 1.07189 19.6852 1.01871 19.7348 0.945063C19.7843 0.871424 19.8422 0.818238 19.9082 0.785508C19.9578 0.752777 20.0115 0.732323 20.0693 0.724141C20.1271 0.715959 20.1726 0.711868 20.2056 0.711868H24.4925C24.7403 0.711868 24.9386 0.728232 25.0873 0.760959C25.2359 0.79369 25.3268 0.859148 25.3598 0.957336C25.4094 1.08826 25.3351 1.42373 25.1368 1.96377C24.9386 2.50381 24.3521 3.42841 23.3774 4.7376C23.2122 4.9667 23.0553 5.17535 22.9066 5.36355C22.7579 5.55174 22.6175 5.72766 22.4854 5.89131C21.5933 7.05321 21.1514 7.82235 21.1596 8.19874C21.1679 8.57513 21.6428 9.20517 22.5845 10.0889Z" />
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/79122106197" class="header__contacts-btn wa">
+                                <svg class="header__contacts-icon" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_241_4011)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.93518 17.9037L0.271484 23.9773L6.4872 22.348C8.20637 23.2836 10.1324 23.7739 12.0897 23.7741H12.095C18.5564 23.7741 23.8189 18.5169 23.8189 12.0531C23.8194 10.5131 23.5165 8.988 22.9276 7.56501C22.3386 6.14203 21.4751 4.84901 20.3863 3.75981C19.2976 2.67062 18.0049 1.80658 16.5821 1.21705C15.1594 0.62752 13.6344 0.324051 12.0944 0.323975C5.63177 0.323975 0.369897 5.5806 0.369897 12.0444C0.367309 14.1012 0.907228 16.1222 1.93518 17.9037ZM8.37711 6.44058C8.59432 6.44932 8.83249 6.45922 9.06018 6.96467C9.21539 7.30995 9.47499 7.95299 9.68192 8.46554C9.83445 8.84336 9.95836 9.15027 9.99073 9.21477C10.067 9.36675 10.1177 9.54378 10.0164 9.74643C10.0009 9.77738 9.98659 9.80655 9.97296 9.8344C9.89735 9.98886 9.84173 10.1025 9.71296 10.2525C9.66133 10.3126 9.60795 10.3775 9.55463 10.4424C9.45099 10.5684 9.34756 10.6942 9.25759 10.7841C9.1056 10.9373 8.94954 11.0992 9.12423 11.4031C9.29893 11.7071 9.91037 12.7 10.813 13.5047C11.782 14.3691 12.6245 14.7346 13.0518 14.92C13.1355 14.9563 13.2032 14.9857 13.2529 15.0106C13.5563 15.1626 13.7327 15.137 13.9103 14.9343C14.088 14.7317 14.6685 14.0492 14.8712 13.7452C15.0738 13.4413 15.2759 13.4925 15.5542 13.5933C15.8326 13.694 17.3239 14.4289 17.6279 14.5803C17.6854 14.609 17.7393 14.6349 17.7893 14.659C18.0033 14.7622 18.147 14.8314 18.2102 14.9343C18.2882 15.0613 18.2888 15.6681 18.0355 16.3768C17.7822 17.0854 16.5419 17.7668 15.9869 17.8198C15.9347 17.8247 15.8827 17.831 15.8292 17.8375C15.3152 17.8998 14.6666 17.9785 12.3456 17.0627C9.49622 15.9386 7.61702 13.1534 7.22829 12.5773C7.19637 12.53 7.1745 12.4976 7.16297 12.4822L7.16097 12.4795C7.00172 12.2672 5.92379 10.8302 5.92379 9.34346C5.92379 7.94624 6.61018 7.214 6.92642 6.87663C6.94812 6.85349 6.96807 6.8322 6.98594 6.81269C7.0873 6.69705 7.21148 6.60363 7.35068 6.53829C7.48987 6.47296 7.64108 6.43711 7.79479 6.43301C7.80749 6.43301 7.8202 6.43301 7.8329 6.43301C8.02345 6.43297 8.21333 6.43294 8.37711 6.44058Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_241_4011">
+                                            <rect width="24" height="24" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__feedback">
+                    <a href="tel:+73433430378" class="link-reset header__tel">
+                        <svg class="header__icon" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_360_5370)">
+                                <g clip-path="url(#clip1_360_5370)">
+                                    <path
+                                        d="M4.07917 10.036C2.51654 7.90728 2.81695 4.98236 4.68423 3.11509L6.46632 1.333C7.25369 0.545626 8.53028 0.545625 9.31765 1.333L12.1777 4.19302C12.9487 4.96403 12.3666 6.40062 11.3457 6.78349C9.6137 7.43303 8.42442 8.99377 12.169 12.7383C15.9136 16.4829 17.4743 15.2936 18.1238 13.5616C18.5067 12.5407 19.9433 11.9587 20.7143 12.7297L23.5743 15.5897C24.3617 16.3771 24.3617 17.6536 23.5743 18.441L21.7922 20.2231C19.925 22.0904 17 22.3908 14.8713 20.8282C12.914 19.3914 10.5885 17.5734 8.96123 15.9461C7.33394 14.3188 5.51593 11.9933 4.07917 10.036Z" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_360_5370">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                                <clipPath id="clip1_360_5370">
+                                    <rect width="24.5928" height="24.5928" fill="white"
+                                        transform="translate(0.407227 -0.0927734)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        +7 (343) 283 08 08</a>
+                    <button class="btn-reset button header__btn">
+                        Обсудить ситуацию
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section breadcrumbs">
+            <div class="container">
+                <ul class="list-reset breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="https://www.ugmk-clinic.ru/"
+                            class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item"><a href="../index.html" class="breadcrumbs__link">Центр
+                            психотерапии</a>
+                    </li>
+                    <li class="breadcrumbs__item">Календарь событий</li>
+                </ul>
+            </div>
+        </section>
+        <section class=" section page-events">
+            <div class="container">
+                <h1 class="title margin-reset">
+                    Календарь событий
+                </h1>
+                <div class=" page-events__horisontal-scroll" id="scrollable-block">
+                    <ul class="list-reset page-events__list-category">
+                        <li class="page-events__item-category filter selected reset" data-filter="reset">Все</li>
+                        <li class="page-events__item-category filter" data-filter="training">Тренинг</li>
+                        <li class="page-events__item-category filter" data-filter="lecture">Лекция</li>
+                        <li class="page-events__item-category filter" data-filter="master-class">Мастер-класс</li>
+                        <li class="page-events__item-category filter" data-filter="group-classes">Групповые занятия</li>
+                        <li class="page-events__item-category filter" data-filter="conference">Конференция</li>
+                        <li class="page-events__item-category filter" data-filter="webinar">Вебинар</li>
+                        <li class="page-events__item-category filter" data-filter="activity">Практика</li>
+                        <li class="page-events__item-category filter" data-filter="woman-classes">Женский круг</li>
+                        <li class="page-events__item-category filter" data-filter="game">Игра</li>
+                        <li class="page-events__item-category filter" data-filter="lesson">Занятие</li>
+                        <li class="page-events__item-category filter" data-filter="course">Курс</li>
+                        <li class="page-events__item-category filter" data-filter="open-house-day">День открытых дверей
+                        </li>
+                        <li class="page-events__item-category filter" data-filter="music">Музыкотерапия</li>
+                        <li class="page-events__item-category filter" data-filter="art">Арт-терапия</li>
+                        <li class="page-events__item-category filter" data-filter="program">Программа</li>
+                    </ul>
+                </div>
+                <div class="page-events__cards">
+                    <div class="page-events__card-item training card-item-1 small-card">
+                        <div class="page-events__card-content">
+                            <div class="events__info">
+                                <div class="events__date">
+                                    <p class="margin-reset events__day margin-reset">
+                                        4
+                                    </p>
+                                    <p class="margin-reset events__month margin-reset">июня<span
+                                            class="events__note">ср</span></p>
+                                </div>
+                                <div class="events__time">
+                                    <p class="margin-reset events__start margin-reset">
+                                        Начало в 18:00
+                                    </p>
+                                    <p class="margin-reset events__note margin-reset">
+                                        Продолжительность: 2 ч.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="page-events__category">
+                                Тренинг
+                            </div>
+                            <h2 class="margin-reset page-events__title title mobile-card-title">
+                                Тренинг «Мужчина и Женщина. Эволюция любви» 18+
+                            </h2>
+                            <div class="limit-str">
+                                <p class="margin-reset page-events__description">
+                                    Как вы думаете, в нашем мире отношения между мужчиной и женщиной эволюционируют или
+                                    деградируют?
+                                    Почему растет количество разводов?
+                                    Многим из нас знакомо чувство влюбленности, страсти и восхищения своим близким
+                                    человеком. Это легкое ощущение радости, тепла и взаимного стремления друг к другу мы
+                                    смело называем любовью.
+                                    Однако любовь намного более сложное чувство…
+                                    Если Вы решили, что в ваших отношениях любовь закончилась, возможно, что она еще и
+                                    не начиналась…
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events__price">
+                            <p class="margin-reset events__price-price page-events__price margin-reset">
+                                1 400,00 ₽
+                            </p>
+
+                            <button class="btn-reset button events__btn-enrol">Записаться</button>
+                            <button data-path="page-events-1"
+                                class="btn-reset button events__btn-more modal-card">Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="page-events__card-item activity card-item-2 big-card">
+                        <div class="page-events__card-content">
+                            <div class="events__info">
+                                <div class="events__date">
+                                    <p class="margin-reset events__day margin-reset">
+                                        7
+                                    </p>
+                                    <p class="margin-reset events__month margin-reset">июня<span
+                                            class="events__note">пт</span></p>
+                                </div>
+                                <div class="events__time">
+                                    <p class="margin-reset events__start margin-reset">
+                                        Начало в 16:00
+                                    </p>
+                                    <p class="margin-reset events__note margin-reset">
+                                        Продолжительность: 4 ч.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="page-events__category">
+                                Практика
+                            </div>
+                            <h2 class="margin-reset page-events__title title">
+                                Трансформационная психологическая игра «7 циклов»
+                            </h2>
+                            <div class="limit-str">
+                                <p class="margin-reset">
+                                    В ходе тренинга вы пройдете 7 циклов, благодаря которым:
+                                </p>
+                                <ul class="margin-reset page-events__description-list">
+                                    <li class="page-events__description-item">поймете, что происходит сейчас в вашей
+                                        жизни;</li>
+                                    <li class="page-events__description-item">проанализируете ошибки прошлого;</li>
+                                    <li class="page-events__description-item">осознаете, чего ожидать в ближайшем
+                                        будущем (в рамках одного года);</li>
+                                    <li class="page-events__description-item">узнаете какие опасности и соблазны могут
+                                        вас подстерегать на пути, а главное — возьмете на себя ответственность за свою
+                                        жизнь и все происходящее в ней;</li>
+                                    <li class="page-events__description-item">ответите на вопрос как отразится то или
+                                        иное (еще не принятое вами) решение на вашей дальнейшей жизни</li>
+                                </ul>
+                                <p class="margin-reset page-events__description">Количество участников ограничено — 4
+                                    человека
+                                </p>
+                                <p class="margin-reset page-events__description">
+                                    Спикер: Панаит Екатерина Владиславовна, психолог, клинический психолог
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events__price">
+                            <p class="margin-reset events__price-price page-events__price margin-reset">
+                                1 400,00 ₽
+                            </p>
+
+                            <button class="btn-reset button events__btn-enrol">Записаться</button>
+                            <button data-path="page-events-2"
+                                class="btn-reset button events__btn-more modal-card">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="page-events__card-item course card-item-3 big-card">
+                        <div class="page-events__card-content">
+                            <div class="events__info">
+                                <div class="events__date">
+                                    <p class="margin-reset events__day margin-reset">
+                                        8
+                                    </p>
+                                    <p class="margin-reset events__month margin-reset">июня<span
+                                            class="events__note">сб</span></p>
+                                </div>
+                                <div class="events__time">
+                                    <p class="margin-reset events__start margin-reset">
+                                        Начало в 11:00
+                                    </p>
+                                    <p class="margin-reset events__note margin-reset">
+                                        Продолжительность: 3 ч.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="page-events__category">
+                                Курс
+                            </div>
+                            <h2 class="margin-reset page-events__title title">
+                                Курс трансформации Я «Травматический опыт и его ресурс»
+                            </h2>
+                            <div class="limit-str">
+                                <p class="margin-reset page-events__description">
+                                    Тренинг направлен на работу с негативным и травматическим опытом и его
+                                    преобразованием в
+                                    ресурс и внутреннее развитие
+                                    личность человека в современном мире находится в раздробленном состоянии. Постоянные
+                                    стрессы, огромные стимулы, чрезмерные стремления расщепляют нашу психику на
+                                    отдельные
+                                    составляющие: «тело — эмоции — ум», расщепляют эмоции и чувства на «хочу — должен —
+                                    надо». В результате этого человек испытывает усталость, тревогу и выгорание.
+                                </p>
+                                <p class="margin-reset">
+                                    Семинар будет полезен:
+                                </p>
+                                <ul class="margin-reset page-events__description-list">
+                                    <li class="page-events__description-item">желающим справиться с негативным
+                                        эмоциональным
+                                        и физическими состояниями;</li>
+                                    <li class="page-events__description-item">людям, жаждущим раскрыть свой личный
+                                        потенциал
+                                        и познакомиться с внутренними ресурсами;</li>
+                                    <li class="page-events__description-item">целеустремленным людям, кто привержен
+                                        саморазвитию и внутреннему духовному росту.</li>
+                                </ul>
+                                <p class="margin-reset page-events__description">
+                                    Спикер: Епанчинцев Михаил Юрьевич Психолог, психоаналитик
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events__price">
+                            <p class="margin-reset events__price-price page-events__price">
+                                1 950,00 ₽
+                            </p>
+
+                            <button class="btn-reset button events__btn-enrol">Записаться</button>
+                            <button data-path="page-events-3"
+                                class="btn-reset button events__btn-more modal-card">Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="page-events__card-item special-orange training card-item-4 small-card">
+                        <div class="page-events__card-content">
+                            <div class="events__info">
+                                <div class="events__date">
+                                    <p class="margin-reset events__day margin-reset">
+                                        13
+                                    </p>
+                                    <p class="margin-reset events__month margin-reset">июня<span
+                                            class="events__note">пт</span></p>
+                                </div>
+                                <div class="events__time">
+                                    <p class="margin-reset events__start margin-reset">
+                                        Начало в 18:00
+                                    </p>
+                                    <p class="margin-reset events__note margin-reset">
+                                        Продолжительность: 2 ч.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="page-events__category">
+                                Тренинг
+                            </div>
+                            <h2 class="margin-reset page-events__title title mobile-card-title">
+                                «Телесно-ориентированная психотерапия:
+                                метод М.&nbsp;Фельденкрайза»
+                            </h2>
+                            <div class="limit-str">
+                                <p class="margin-reset page-events__description ">
+                                    Метод Фельденкрайза — метод телесно-ориентированной психотерапии базовым принципом,
+                                    которого является связь тела и сознания.
+                                    Работая с телом, можно добиться значимого уменьшение уровня мышечного напряжения,
+                                    скованности и зажатости, работая на расслабление мы снижаем уровень тревоги и
+                                    хронического напряжения. По результатам занятий удается стать более спокойными и
+                                    заземленными, начать ощущать свое тело и движения; проработать на телесном уровне
+                                    психологические проблемы.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events__price">
+                            <p class="margin-reset events__price-price page-events__price margin-reset">
+                                1 400,00 ₽
+                            </p>
+
+                            <button class="btn-reset button events__btn-enrol">Записаться</button>
+                            <button data-path="page-events-4"
+                                class="btn-reset button events__btn-more modal-card">Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="page-events__card-item activity card-item-5 big-card">
+                        <div class="page-events__card-content">
+                            <div class="events__info">
+                                <div class="events__date">
+                                    <p class="margin-reset events__day margin-reset">
+                                        14
+                                    </p>
+                                    <p class="margin-reset events__month margin-reset">июня<span
+                                            class="events__note">сб</span></p>
+                                </div>
+                                <div class="events__time">
+                                    <p class="margin-reset events__start margin-reset">
+                                        Начало в 16:00
+                                    </p>
+                                    <p class="margin-reset events__note margin-reset">
+                                        Продолжительность: 2 ч.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="page-events__category">
+                                Практика
+                            </div>
+                            <h2 class="margin-reset page-events__title title">
+                                Терапевтическая практика «Женский круг. В гармонии с собой»
+                            </h2>
+                            <div class="limit-str">
+                                <p class="margin-reset">
+                                    В современных реалиях гармоничное состояние очень ценно и, зачастую, редко
+                                    достижимо. Гармония есть там, где энергия, а энергия льется там, где есть гармония ✨
+                                </p>
+                                <p class="margin-reset">
+                                    Уметь отдыхать и выделять время для себя — это навык. Уметь расставлять приоритеты —
+                                    это искусство.
+                                </p>
+                                <p class="margin-reset">
+                                    Если вы ощущаете, что:
+                                </p>
+                                <ul class="margin-reset page-events__description-list">
+                                    <li class="page-events__description-item">ничего не успеваете;</li>
+                                    <li class="page-events__description-item">у вас нет сил на что-то для себя;</li>
+                                    <li class="page-events__description-item">вечерами чувствуете, что выжаты, как
+                                        лимон;</li>
+                                    <li class="page-events__description-item">потеряли ощущение, что живете своей
+                                        жизнью;</li>
+                                    <li class="page-events__description-item">периодически ощущаете внутреннее
+                                        напряжение, сопротивление.</li>
+                                </ul>
+                                <p class="margin-reset page-events__description">
+                                    Мы приглашаем вас на групповое занятие, чтобы исследовать ваше состояние и помочь
+                                    запустить поток энергии, который приведет вас ко внутренней и внешней гармонии.
+                                </p>
+                                <p class="margin-reset page-events__description">
+                                    Спикер: Панаит Екатерина Владиславовна, психолог, клинический психолог
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events__price">
+                            <p class="margin-reset events__price-price page-events__price margin-reset">
+                                2 100,00 ₽
+                            </p>
+
+                            <button class="btn-reset button events__btn-enrol">Записаться</button>
+                            <button data-path="page-events-5"
+                                class="btn-reset button events__btn-more modal-card">Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="page-events__card-item special-gray master-class card-item-6 big-card">
+                        <div class="page-events__card-content">
+                            <div class="events__info">
+                                <div class="events__date">
+                                    <p class="margin-reset events__day margin-reset">
+                                        21
+                                    </p>
+                                    <p class="margin-reset events__month margin-reset">июня<span
+                                            class="events__note">сб</span></p>
+                                </div>
+                                <div class="events__time">
+                                    <p class="margin-reset events__start margin-reset">
+                                        Начало в 15:00
+                                    </p>
+                                    <p class="margin-reset events__note margin-reset">
+                                        Продолжительность: 2 ч.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="page-events__category">
+                                Мастер-класс
+                            </div>
+                            <h2 class="margin-reset page-events__title title">
+                                Мастер-класс «Семейные кризисы и как в них уцелеть»
+                            </h2>
+                            <div class="limit-str">
+                                <p class="margin-reset">
+                                    В ходе мастер-класса с семейным психологом будут раскрыты следующие вопросы:
+                                </p>
+                                <ul class="margin-reset page-events__description-list">
+                                    <li class="page-events__description-item">как мы выбираем партнера и как на это
+                                        влияет наше детство;</li>
+                                    <li class="page-events__description-item">семейные кризисы или почему так много
+                                        разводов;</li>
+                                    <li class="page-events__description-item">супружеские отношения и конфликты
+                                        (причины, методы самопомощи)</li>
+                                    <li class="page-events__description-item">измены и любовные треугольники;</li>
+                                    <li class="page-events__description-item">отношения с родственниками, как сохранить
+                                        мир и не поругаться.</li>
+                                </ul>
+                                <p class="margin-reset page-events__description">Делаем акцент на практику и
+                                    применимость полученного знания в партнерских отношениях.
+                                </p>
+                                <p class="margin-reset page-events__description">
+                                    Спикер: Мостиков Сергей Владимирович, кандидат психологических наук, соучредитель
+                                    «Союза профессиональных психоаналитиков»
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events__price">
+                            <p class="margin-reset events__price-price page-events__price margin-reset">
+                                1 400,00 ₽
+                            </p>
+
+                            <button class="btn-reset button events__btn-enrol">Записаться</button>
+                            <button data-path="page-events-6"
+                                class="btn-reset button events__btn-more modal-card">Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="page-events__card-item game card-item-7 big-card">
+                        <div class="page-events__card-content">
+                            <div class=" events__info">
+                                <div class="events__date">
+                                    <p class="margin-reset events__day margin-reset">
+                                        21
+                                    </p>
+                                    <p class="margin-reset events__month margin-reset">июня<span
+                                            class="events__note">сб</span></p>
+                                </div>
+                                <div class="events__time">
+                                    <p class="margin-reset events__start margin-reset">
+                                        Начало в 16:00
+                                    </p>
+                                    <p class="margin-reset events__note margin-reset">
+                                        Продолжительность: 4 ч.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="page-events__category">
+                                Игра
+                            </div>
+                            <h2 class="margin-reset page-events__title title">
+                                Трансформационная игра «Синдром самозванца»
+                            </h2>
+                            <div class="limit-str">
+                                <p class="margin-reset">
+                                    На игру можно прийти со следующими запросами:
+                                </p>
+                                <ul class="margin-reset page-events__description-list">
+                                    <li class="page-events__description-item">что мне поможет почувствовать уверенность
+                                        в своей профессии и свою уникальность в качестве эксперта?</li>
+                                    <li class="page-events__description-item">Как научиться легко реагировать на критику
+                                        и не зацикливаться на ошибках?</li>
+                                    <li class="page-events__description-item">Как мне почувствовать силу внутри себя и
+                                        начать действовать?</li>
+                                    <li class="page-events__description-item">Как научиться замечать и ценить свои
+                                        достижения?  </li>
+                                    <li class="page-events__description-item">Что мне поможет для осуществления своих
+                                        профессиональных целей (карьерный рост, открытие своего дела, получение
+                                        дополнительного образования)?</li>
+                                </ul>
+                                <p class="margin-reset page-events__description">
+                                    Спикер: Панаит Екатерина Владиславовна, психолог, клинический психолог
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events__price">
+                            <p class="margin-reset events__price-price page-events__price margin-reset">
+                                2 700,00 ₽
+                            </p>
+
+                            <button class="btn-reset button events__btn-enrol">Записаться</button>
+                            <button data-path="page-events-7"
+                                class="btn-reset button events__btn-more modal-card">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="page-events__card-item training card-item-8 small-card">
+                        <div class="page-events__card-content">
+                            <div class="events__info">
+                                <div class="events__date">
+                                    <p class="margin-reset events__day margin-reset">
+                                        22
+                                    </p>
+                                    <p class="margin-reset events__month margin-reset">июня<span
+                                            class="events__note">вс</span></p>
+                                </div>
+                                <div class="events__time">
+                                    <p class="margin-reset events__start margin-reset">
+                                        Начало в 14:15
+                                    </p>
+                                    <p class="margin-reset events__note margin-reset">
+                                        Продолжительность: 2 ч.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="page-events__category">
+                                Тренинг
+                            </div>
+                            <h2 class="margin-reset page-events__title title mobile-card-title">
+                                Тренинг «Психология любви» 18+
+                            </h2>
+                            <div class="limit-str">
+                                <p class="margin-reset page-events__description">
+                                    Каких партнеров мы выбираем и почему?
+                                    Любовь — это великий дар и испытание. Ее сила несокрушима, а последствия
+                                    непредсказуемы. Она дарует высшее наслаждение и гармонию или, напротив, приводит к
+                                    разрушению и гибели...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events__price">
+                            <p class="margin-reset events__price-price page-events__price margin-reset">
+                                2 700,00 ₽
+                            </p>
+
+                            <button class="btn-reset button events__btn-enrol">Записаться</button>
+                            <button data-path="page-events-8"
+                                class="btn-reset button events__btn-more modal-card">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="page-events__card-item course  card-item-10 small-card">
+                        <div class="page-events__card-content">
+                            <div class="events__info">
+                                <div class="events__date">
+                                    <p class="margin-reset events__day margin-reset">
+                                        29
+                                    </p>
+                                    <p class="margin-reset events__month margin-reset">июня<span
+                                            class="events__note">вс</span></p>
+                                </div>
+                                <div class="events__time">
+                                    <p class="margin-reset events__start margin-reset">
+                                        Начало в 11:00
+                                    </p>
+                                    <p class="margin-reset events__note margin-reset">
+                                        Продолжительность: 2 ч.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="page-events__category">
+                                Курс
+                            </div>
+                            <h2 class="margin-reset page-events__title title mobile-card-title">
+                                Курс трансформации Я «Внутренняя ценность»
+                            </h2>
+                            <div class="limit-str">
+                                <p class="margin-reset page-events__description">
+                                    Тренинг направлен на работу с трансформацией негативного опыта прошлого во
+                                    внутренние ресурсы настоящего...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events__price">
+                            <p class="margin-reset events__price-price page-events__price margin-reset">
+                                1 950,00 ₽
+                            </p>
+
+                            <button class="btn-reset button events__btn-enrol">Записаться</button>
+                            <button data-path="page-events-9"
+                                class="btn-reset button events__btn-more modal-card">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="page-events__links card-item-9 follow-block">
+                        <div class="page-events__mailing">
+                            <h4 class="events__title  margin-reset">Новый месяц — новые возможности</h4>
+                            <p class="events__description margin-reset">Каждый месяц мы подбираем и разрабатываем
+                                новые программы,
+                                ориентируясь
+                                на ваши запросы.</p>
+                            <a href="" class="events__mailing-link">Подписывайтесь на обновления</a>
+                        </div>
+                    </div>
+                    <div class="page-events__nothing hidden">
+                        <h4 class="events__title  margin-reset">Событий этого типа в текущем месяце не запланировано
+                        </h4>
+                        <p class="events__description margin-reset">Зато есть другие интересные активности —
+                            может, они вас заинтересуют? Или подпишитесь на уведомления, и мы сообщим, как только что-то
+                            появится.</p>
+                        <a href="" class="events__mailing-link">Подписаться</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modals">
+            <div class="modal-overlay">
+                <div class="modal" data-target="page-events-1">
+                    <h3 class="margin-reset modal__title  ">Тренинг «Мужчина и Женщина. Эволюция любви»
+                        18+</h3>
+                    <div class="modal__content scrollbar">
+                        <div class="events__info modal-overlay__text">
+                            <div class="events__date">
+                                <p class="events__day margin-reset">
+                                    13
+                                </p>
+                                <p class="events__month margin-reset">июня<span class="events__note">пт</span></p>
+                            </div>
+                            <div class="events__time">
+                                <p class="events__start margin-reset">
+                                    Начало в 18:00
+                                </p>
+                                <p class="events__note margin-reset">
+                                    Продолжительность: 2 ч.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="margin-reset modal-overlay__text">
+                            Метод Фельденкрайза — метод телесно-ориентированной психотерапии базовым принципом, которого
+                            является
+                            связь тела и сознания.
+                            Работая с телом, можно добиться значимого уменьшение уровня мышечного напряжения,
+                            скованности и зажатости,
+                            работая на расслабление мы снижаем уровень тревоги и хронического напряжения. По результатам
+                            занятий
+                            удается стать более спокойными и заземленными, начать ощущать свое тело и движения;
+                            проработать на
+                            телесном уровне психологические проблемы.
+                        </p>
+                        <p class="margin-reset modal-overlay__text">
+                            Спикер: Мостиков Сергей Владимирович, кандидат психологических наук, соучредитель «Союза
+                            профессиональных
+                            психоаналитиков»
+                        </p>
+                        <div class="events__price modal-overlay__text">
+                            <p class="events__price-price margin-reset">
+                                1 400,00 ₽
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__btn events__btn">
+                        <button class="btn-reset button events__btn-enrol">Записаться</button>
+                        <button class="btn-reset button modal__btn-close">Понятно</button>
+                    </div>
+                </div>
+
+                <div class="modal" data-target="page-events-2">
+                    <h3 class="margin-reset modal__title  ">Трансформационная психологическая игра «7
+                        циклов»
+                    </h3>
+                    <div class="modal__content scrollbar">
+                        <div class="events__info modal-overlay__text">
+                            <div class="events__date">
+                                <p class="events__day margin-reset">
+                                    13
+                                </p>
+                                <p class="events__month margin-reset">июня<span class="events__note">пт</span></p>
+                            </div>
+                            <div class="events__time">
+                                <p class="events__start margin-reset">
+                                    Начало в 18:00
+                                </p>
+                                <p class="events__note margin-reset">
+                                    Продолжительность: 2 ч.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="margin-reset modal-overlay__text">
+                            Метод Фельденкрайза — метод телесно-ориентированной психотерапии базовым принципом, которого
+                            является
+                            связь тела и сознания.
+                            Работая с телом, можно добиться значимого уменьшение уровня мышечного напряжения,
+                            скованности и зажатости,
+                            работая на расслабление мы снижаем уровень тревоги и хронического напряжения. По результатам
+                            занятий
+                            удается стать более спокойными и заземленными, начать ощущать свое тело и движения;
+                            проработать на
+                            телесном уровне психологические проблемы.
+                        </p>
+                        <p class="margin-reset modal-overlay__text">
+                            Спикер: Мостиков Сергей Владимирович, кандидат психологических наук, соучредитель «Союза
+                            профессиональных
+                            психоаналитиков»
+                        </p>
+                        <div class="events__price modal-overlay__text">
+                            <p class="events__price-price margin-reset">
+                                1 400,00 ₽
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__btn events__btn">
+                        <button class="btn-reset button events__btn-enrol">Записаться</button>
+                        <button class="btn-reset button modal__btn-close">Понятно</button>
+                    </div>
+                </div>
+
+                <div class="modal" data-target="page-events-3">
+                    <h3 class="margin-reset modal__title  ">Курс трансформации Я «Травматический опыт и
+                        его ресурс»</h3>
+                    <div class="modal__content scrollbar">
+                        <div class="events__info modal-overlay__text">
+                            <div class="events__date">
+                                <p class="events__day margin-reset">
+                                    13
+                                </p>
+                                <p class="events__month margin-reset">июня<span class="events__note">пт</span></p>
+                            </div>
+                            <div class="events__time">
+                                <p class="events__start margin-reset">
+                                    Начало в 18:00
+                                </p>
+                                <p class="events__note margin-reset">
+                                    Продолжительность: 2 ч.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="margin-reset modal-overlay__text">
+                            Метод Фельденкрайза — метод телесно-ориентированной психотерапии базовым принципом, которого
+                            является
+                            связь тела и сознания.
+                            Работая с телом, можно добиться значимого уменьшение уровня мышечного напряжения,
+                            скованности и зажатости,
+                            работая на расслабление мы снижаем уровень тревоги и хронического напряжения. По результатам
+                            занятий
+                            удается стать более спокойными и заземленными, начать ощущать свое тело и движения;
+                            проработать на
+                            телесном уровне психологические проблемы.
+                        </p>
+                        <p class="margin-reset modal-overlay__text">
+                            Спикер: Мостиков Сергей Владимирович, кандидат психологических наук, соучредитель «Союза
+                            профессиональных
+                            психоаналитиков»
+                        </p>
+                        <div class="events__price modal-overlay__text">
+                            <p class="events__price-price margin-reset">
+                                1 400,00 ₽
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__btn events__btn">
+                        <button class="btn-reset button events__btn-enrol">Записаться</button>
+                        <button class="btn-reset button modal__btn-close">Понятно</button>
+                    </div>
+                </div>
+
+                <div class="modal" data-target="page-events-4">
+                    <h3 class="margin-reset modal__title  "> «Телесно-ориентированная психотерапия:
+                        метод М. Фельденкрайза»</h3>
+                    <div class="modal__content scrollbar">
+                        <div class="events__info modal-overlay__text">
+                            <div class="events__date">
+                                <p class="events__day margin-reset">
+                                    13
+                                </p>
+                                <p class="events__month margin-reset">июня<span class="events__note">пт</span></p>
+                            </div>
+                            <div class="events__time">
+                                <p class="events__start margin-reset">
+                                    Начало в 18:00
+                                </p>
+                                <p class="events__note margin-reset">
+                                    Продолжительность: 2 ч.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="margin-reset modal-overlay__text">
+                            Метод Фельденкрайза — метод телесно-ориентированной психотерапии базовым принципом, которого
+                            является
+                            связь тела и сознания.
+                            Работая с телом, можно добиться значимого уменьшение уровня мышечного напряжения,
+                            скованности и зажатости,
+                            работая на расслабление мы снижаем уровень тревоги и хронического напряжения. По результатам
+                            занятий
+                            удается стать более спокойными и заземленными, начать ощущать свое тело и движения;
+                            проработать на
+                            телесном уровне психологические проблемы.
+                        </p>
+                        <p class="margin-reset modal-overlay__text">
+                            Спикер: Мостиков Сергей Владимирович, кандидат психологических наук, соучредитель «Союза
+                            профессиональных
+                            психоаналитиков»
+                        </p>
+                        <div class="events__price modal-overlay__text">
+                            <p class="events__price-price margin-reset">
+                                1 400,00 ₽
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__btn events__btn">
+                        <button class="btn-reset button events__btn-enrol">Записаться</button>
+                        <button class="btn-reset button modal__btn-close">Понятно</button>
+                    </div>
+                </div>
+
+                <div class="modal" data-target="page-events-5">
+                    <h3 class="margin-reset modal__title  "> Терапевтическая практика «Женский круг. В
+                        гармонии с собой»</h3>
+                    <div class="modal__content scrollbar">
+                        <div class="events__info modal-overlay__text">
+                            <div class="events__date">
+                                <p class="events__day margin-reset">
+                                    13
+                                </p>
+                                <p class="events__month margin-reset">июня<span class="events__note">пт</span></p>
+                            </div>
+                            <div class="events__time">
+                                <p class="events__start margin-reset">
+                                    Начало в 18:00
+                                </p>
+                                <p class="events__note margin-reset">
+                                    Продолжительность: 2 ч.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="margin-reset modal-overlay__text">
+                            Метод Фельденкрайза — метод телесно-ориентированной психотерапии базовым принципом, которого
+                            является
+                            связь тела и сознания.
+                            Работая с телом, можно добиться значимого уменьшение уровня мышечного напряжения,
+                            скованности и зажатости,
+                            работая на расслабление мы снижаем уровень тревоги и хронического напряжения. По результатам
+                            занятий
+                            удается стать более спокойными и заземленными, начать ощущать свое тело и движения;
+                            проработать на
+                            телесном уровне психологические проблемы.
+                        </p>
+                        <p class="margin-reset modal-overlay__text">
+                            Спикер: Мостиков Сергей Владимирович, кандидат психологических наук, соучредитель «Союза
+                            профессиональных
+                            психоаналитиков»
+                        </p>
+                        <div class="events__price modal-overlay__text">
+                            <p class="events__price-price margin-reset">
+                                1 400,00 ₽
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__btn events__btn">
+                        <button class="btn-reset button events__btn-enrol">Записаться</button>
+                        <button class="btn-reset button modal__btn-close">Понятно</button>
+                    </div>
+                </div>
+
+                <div class="modal" data-target="page-events-6">
+                    <h3 class="margin-reset modal__title  ">Мастер-класс«Семейные кризисы и как в них
+                        уцелеть»</h3>
+                    <div class="modal__content scrollbar">
+                        <div class="events__info modal-overlay__text">
+                            <div class="events__date">
+                                <p class="events__day margin-reset">
+                                    13
+                                </p>
+                                <p class="events__month margin-reset">июня<span class="events__note">пт</span></p>
+                            </div>
+                            <div class="events__time">
+                                <p class="events__start margin-reset">
+                                    Начало в 18:00
+                                </p>
+                                <p class="events__note margin-reset">
+                                    Продолжительность: 2 ч.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="margin-reset modal-overlay__text">
+                            Метод Фельденкрайза — метод телесно-ориентированной психотерапии базовым принципом, которого
+                            является
+                            связь тела и сознания.
+                            Работая с телом, можно добиться значимого уменьшение уровня мышечного напряжения,
+                            скованности и зажатости,
+                            работая на расслабление мы снижаем уровень тревоги и хронического напряжения. По результатам
+                            занятий
+                            удается стать более спокойными и заземленными, начать ощущать свое тело и движения;
+                            проработать на
+                            телесном уровне психологические проблемы.
+                        </p>
+                        <p class="margin-reset modal-overlay__text">
+                            Спикер: Мостиков Сергей Владимирович, кандидат психологических наук, соучредитель «Союза
+                            профессиональных
+                            психоаналитиков»
+                        </p>
+                        <div class="events__price modal-overlay__text">
+                            <p class="events__price-price margin-reset">
+                                1 400,00 ₽
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__btn events__btn">
+                        <button class="btn-reset button events__btn-enrol">Записаться</button>
+                        <button class="btn-reset button modal__btn-close">Понятно</button>
+                    </div>
+                </div>
+
+                <div class="modal" data-target="page-events-7">
+                    <h3 class="margin-reset modal__title  ">Трансформационная игра «Синдром самозванца»
+                    </h3>
+                    <div class="modal__content scrollbar">
+                        <div class="events__info modal-overlay__text">
+                            <div class="events__date">
+                                <p class="events__day margin-reset">
+                                    13
+                                </p>
+                                <p class="events__month margin-reset">июня<span class="events__note">пт</span></p>
+                            </div>
+                            <div class="events__time">
+                                <p class="events__start margin-reset">
+                                    Начало в 18:00
+                                </p>
+                                <p class="events__note margin-reset">
+                                    Продолжительность: 2 ч.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="margin-reset modal-overlay__text">
+                            Метод Фельденкрайза — метод телесно-ориентированной психотерапии базовым принципом, которого
+                            является
+                            связь тела и сознания.
+                            Работая с телом, можно добиться значимого уменьшение уровня мышечного напряжения,
+                            скованности и зажатости,
+                            работая на расслабление мы снижаем уровень тревоги и хронического напряжения. По результатам
+                            занятий
+                            удается стать более спокойными и заземленными, начать ощущать свое тело и движения;
+                            проработать на
+                            телесном уровне психологические проблемы.
+                        </p>
+                        <p class="margin-reset modal-overlay__text">
+                            Спикер: Мостиков Сергей Владимирович, кандидат психологических наук, соучредитель «Союза
+                            профессиональных
+                            психоаналитиков»
+                        </p>
+                        <div class="events__price modal-overlay__text">
+                            <p class="events__price-price margin-reset">
+                                1 400,00 ₽
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__btn events__btn">
+                        <button class="btn-reset button events__btn-enrol">Записаться</button>
+                        <button class="btn-reset button modal__btn-close">Понятно</button>
+                    </div>
+                </div>
+
+                <div class="modal" data-target="page-events-8">
+                    <h3 class="margin-reset modal__title  ">Тренинг «Психология любви» 18+</h3>
+                    <div class="modal__content scrollbar">
+                        <div class="events__info modal-overlay__text">
+                            <div class="events__date">
+                                <p class="events__day margin-reset">
+                                    13
+                                </p>
+                                <p class="events__month margin-reset">июня<span class="events__note">пт</span></p>
+                            </div>
+                            <div class="events__time">
+                                <p class="events__start margin-reset">
+                                    Начало в 18:00
+                                </p>
+                                <p class="events__note margin-reset">
+                                    Продолжительность: 2 ч.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="margin-reset modal-overlay__text">
+                            Метод Фельденкрайза — метод телесно-ориентированной психотерапии базовым принципом, которого
+                            является
+                            связь тела и сознания.
+                            Работая с телом, можно добиться значимого уменьшение уровня мышечного напряжения,
+                            скованности и зажатости,
+                            работая на расслабление мы снижаем уровень тревоги и хронического напряжения. По результатам
+                            занятий
+                            удается стать более спокойными и заземленными, начать ощущать свое тело и движения;
+                            проработать на
+                            телесном уровне психологические проблемы.
+                        </p>
+                        <p class="margin-reset modal-overlay__text">
+                            Спикер: Мостиков Сергей Владимирович, кандидат психологических наук, соучредитель «Союза
+                            профессиональных
+                            психоаналитиков»
+                        </p>
+                        <div class="events__price modal-overlay__text">
+                            <p class="events__price-price margin-reset">
+                                1 400,00 ₽
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__btn events__btn">
+                        <button class="btn-reset button events__btn-enrol">Записаться</button>
+                        <button class="btn-reset button modal__btn-close">Понятно</button>
+                    </div>
+                </div>
+
+                <div class="modal" data-target="page-events-9">
+                    <h3 class="margin-reset modal__title  ">Курс трансформации Я «Внутренняя ценность»
+                    </h3>
+                    <div class="modal__content scrollbar">
+                        <div class="events__info modal-overlay__text">
+                            <div class="events__date">
+                                <p class="events__day margin-reset">
+                                    13
+                                </p>
+                                <p class="events__month margin-reset">июня<span class="events__note">пт</span></p>
+                            </div>
+                            <div class="events__time">
+                                <p class="events__start margin-reset">
+                                    Начало в 18:00
+                                </p>
+                                <p class="events__note margin-reset">
+                                    Продолжительность: 2 ч.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="margin-reset modal-overlay__text">
+                            Метод Фельденкрайза — метод телесно-ориентированной психотерапии базовым принципом, которого
+                            является
+                            связь тела и сознания.
+                            Работая с телом, можно добиться значимого уменьшение уровня мышечного напряжения,
+                            скованности и зажатости,
+                            работая на расслабление мы снижаем уровень тревоги и хронического напряжения. По результатам
+                            занятий
+                            удается стать более спокойными и заземленными, начать ощущать свое тело и движения;
+                            проработать на
+                            телесном уровне психологические проблемы.
+                        </p>
+                        <p class="margin-reset modal-overlay__text">
+                            Спикер: Мостиков Сергей Владимирович, кандидат психологических наук, соучредитель «Союза
+                            профессиональных
+                            психоаналитиков»
+                        </p>
+                        <div class="events__price modal-overlay__text">
+                            <p class="events__price-price margin-reset">
+                                1 400,00 ₽
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__btn events__btn">
+                        <button class="btn-reset button events__btn-enrol">Записаться</button>
+                        <button class="btn-reset button modal__btn-close">Понятно</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

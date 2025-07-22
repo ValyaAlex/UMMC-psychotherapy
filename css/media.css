@@ -200,6 +200,10 @@
   .programs__card {
     width: 48%
   }
+
+  .page-events__price {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 1215px) {
@@ -211,7 +215,6 @@
     align-items: start;
     background-color: var(--white);
     top: 75px;
-    /* изменен топ*/
     left: 0;
     width: 50%;
     min-width: 250px;
@@ -331,7 +334,6 @@
   }
 
   .header__tel {
-    /* Добавлен класс */
     display: none;
   }
 
@@ -402,10 +404,131 @@
     gap: 6px;
   }
 
-
   .programs__card {
     width: 47%;
   }
+
+  .events__block {
+    flex-direction: column;
+  }
+
+  .events__left,
+  .events__right {
+    width: 100%;
+  }
+
+  .events .events__mailing {
+    display: none;
+  }
+
+  .events__right {
+    flex-direction: row;
+    gap: var(--px32);
+  }
+
+  .events__small {
+    width: 65%;
+  }
+
+  .events__link {
+    height: fit-content;
+    padding: 104px 0;
+    width: 100%;
+  }
+
+  .events__links {
+    width: 40%;
+  }
+
+  .small-card .page-events__description {
+    display: none;
+  }
+
+  .mobile-card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .small-card .events__price-price {
+    display: none;
+  }
+
+  .limit-str {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 9;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+  }
+
+  .page-events__cards {
+    grid-auto-rows: 336px;
+  }
+
+  .events {
+    padding-top: 0;
+  }
+
+
+  .events-swiper {
+    width: 100%;
+    height: 500px;
+  }
+
+  .events__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 6;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+
+  .events__card {
+    padding: 32px;
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+    height: 80%;
+  }
+
+  .events-swiper .events__price-price {
+    margin-bottom: 20px;
+  }
+
+  .events-swiper .events__price {
+    margin-bottom: 0;
+  }
+
+  .events-swiper .events__content-block {
+    height: 100%;
+  }
+
+
+  .events__info {
+    margin-bottom: 15px;
+  }
+
+  .page-events__title {
+    margin-bottom: 15px;
+  }
+
+  .events__day {
+    font-size: 24px;
+  }
+
+  .events__date {
+    width: 95px;
+  }
+
+  .page-events__card-item {
+    padding: 25px;
+  }
+
 }
 
 @media (max-width: 850px) {
@@ -547,6 +670,7 @@
 
   .modal__title {
     font-size: 32px;
+    line-height: 40px;
   }
 
   .modal__banner {
@@ -627,6 +751,62 @@
     background: var(--orange);
     width: 30px;
   }
+
+  .page-events__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .small-card .limit-str {
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+  }
+
+  .small-card .page-events__description {
+    display: block;
+  }
+
+  .mobile-card-title {
+    overflow: visible;
+    text-overflow: inherit;
+    line-clamp: inherit;
+    -webkit-line-clamp: inherit;
+    margin-bottom: 40px;
+  }
+
+  .small-card .events__price-price {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .limit-str {
+    line-clamp: 6;
+    -webkit-line-clamp: 6;
+    margin-bottom: 20px;
+  }
+
+  .page-events .events__btn-more,
+  .events .events__btn-more {
+    display: block;
+    color: var(--white);
+    background-color: var(--orange);
+    transition: all .3s ease;
+  }
+
+  .events__btn-sign-up {
+    display: none;
+  }
+
+  .page-events__card-item .events__btn-enrol {
+    display: none;
+  }
+
+  .events__link {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 720px) {
@@ -659,7 +839,6 @@
   }
 
   .header__nav {
-    /* Добавлен класс чтобы сделать пошире меню */
     width: 70%;
   }
 
@@ -692,7 +871,6 @@
   }
 
   .about__slide:hover {
-    /* Добавлен класс для отмены ховера */
     transform: none;
   }
 
@@ -722,33 +900,6 @@
   .about .container {
     padding: 0;
     padding-left: 17px;
-  }
-
-  .events__text,
-  .events__list {
-    display: none;
-  }
-
-  .events__block {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .events__content {
-    width: 100%;
-  }
-
-  .events__name {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .events__info {
-    width: 100%;
-  }
-
-  .events__place::before {
-    top: 0px;
   }
 
   .about__container {
@@ -1031,6 +1182,45 @@
   .modal__title.programs__title {
     margin-bottom: 0px;
   }
+
+  .breadcrumbs__item {
+    letter-spacing: normal;
+  }
+
+  .events__mobile {
+    display: block;
+  }
+
+  .events-desktop {
+    display: none;
+  }
+
+  .events .events__mailing {
+    display: block;
+    width: 49%;
+  }
+
+  .events__link {
+    width: 49%;
+  }
+
+  .events__links {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .events .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,
+        var(--swiper-pagination-bullet-size, 8px));
+    border-radius: 20px;
+    transition: width 0.4s ease;
+  }
+
+  .events .swiper-pagination-bullet-active {
+    background: var(--orange);
+    width: 30px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1132,12 +1322,6 @@
     height: 300px;
   }
 
-  .events {
-    margin-top: 60px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
   .about__title,
   .hospital {
     padding-top: 80px;
@@ -1161,9 +1345,33 @@
   .swiper-pagination-fraction {
     bottom: 8px;
   }
+
+  .events-swiper {
+    height: 550px;
+  }
+
+  .events__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .events__links {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .events-swiper .events__mailing,
+  .events-swiper .events__link {
+    width: 100%;
+  }
+
+  .events__text {
+    line-clamp: 9;
+    -webkit-line-clamp: 9;
+  }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 376px) {
   .hero__banner-right {
     height: 300px;
     background-size: 260px 270px;
@@ -1193,5 +1401,15 @@
 
   .swiper-specialists-2 {
     height: 660px;
+  }
+
+  .page-events__card-item {
+    padding: 15px;
+  }
+
+  .page-events__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
   }
 }

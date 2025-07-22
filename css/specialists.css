@@ -406,7 +406,7 @@
 
 .specialists__btns {
   display: flex;
-  gap: var(--px32);
+  gap: 20px;
 }
 
 .specialists__btns .modal-card {

@@ -60,7 +60,6 @@ img {
 }
 
 @font-face {
-  /* шрифты поменяла для себя, можно проигнорировать */
   font-family: "Core Sans A 45 Regular";
   src: local("Core Sans A 45 Regular"), local("Core Sans A 45-Regular"),
     url("../fonts/CoreSansA45Regular.woff2") format("woff2");

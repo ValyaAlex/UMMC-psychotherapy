@@ -76,6 +76,18 @@
   cursor: pointer;
 }
 
+.events__btn .modal__btn-close {
+  background-color: transparent;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  transition: color .3s ease, background-color .3s ease;
+}
+
+.events__btn .modal__btn-close:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
 .modal-overlay__text {
   padding: 0 48px;
   max-width: 90%;
