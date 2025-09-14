@@ -1412,4 +1412,16 @@
     line-height: 24px;
     margin-bottom: 20px;
   }
+
+  .events__card {
+    padding: 15px;
+  }
+
+  .events__date {
+    gap: 2px;
+  }
+
+  .events__time {
+    padding-left: 5px;
+  }
 }
